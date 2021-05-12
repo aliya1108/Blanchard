@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blanchard</title>
+	<link rel="preload" href="fonts/open-sans-regular.woff2" as="font"> 
+	<link rel="preload" href="fonts/open-sans-italic.woff2" as="font"> 
+	<link rel="preload" href="fonts/open-sans-600.woff2" as="font">
+	<link rel="preload" href="fonts/open-sans-700.woff2" as="font">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/choices.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/simplebar.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header-top">
+			<div class="container header-container">
+				<div id="burger" class="header-top__burger">
+					<span></span>
+				</div>
+				<img src="img/logo.svg" alt="Логотип Blanchard" class="logo">
+				<nav>
+					<ul class="header-top__list menu-active">
+						<li class="header-top__list_item">
+							<a href="" class="header-top__list_item-link" tabindex="1">О нас</a>
+						</li>
+						<li class="header-top__list_item">
+							<a href="" class="header-top__list_item-link" tabindex="2">Галерея</a>
+						</li>
+						<li class="header-top__list_item">
+							<a href="" class="header-top__list_item-link" tabindex="3">Каталог</a>
+						</li>
+						<li class="header-top__list_item">
+							<a href="" class="header-top__list_item-link" tabindex="4">События</a>
+						</li>
+						<li class="header-top__list_item">
+							<a href="" class="header-top__list_item-link" tabindex="5">Издания</a>
+						</li>
+						<li class="header-top__list_item">
+							<a href="" class="header-top__list_item-link" tabindex="6">Проекты</a>
+						</li>
+						<li class="header-top__list_item">
+							<a href="" class="header-top__list_item-link" tabindex="7">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<a href="" class="header-top__link link-active" tabindex="8">Войти</a>
+				<form class="header-top__form">
+					<button type="button" aria-label="Найти" class="header-top__form_button"></button>
+					<input type="text" class="header-top__form_input">
+				</form>
+				<button type="button" class="header-top__cross-hidden"></button>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container header-container">
+				<div class="header-bottom__list">
+					<div id="item1" class="header-bottom__list_item" tabindex="9">Реализм
+						<div data-simplebar id="scroll1" class="header-bottom__scroll scroll-active">
+							<ul>
+								<li class="header-bottom__scroll_item scroll1-1">Тинторетто</li>
+								<li class="header-bottom__scroll_item scroll1-2">Фридрих</li>
+								<li class="header-bottom__scroll_item scroll1-3">Леонардо</li>
+								<li class="header-bottom__scroll_item scroll1-4">Верроккьо</li>
+								<li class="header-bottom__scroll_item scroll1-1">Тинторетто</li>
+								<li class="header-bottom__scroll_item scroll1-2">Фридрих</li>
+								<li class="header-bottom__scroll_item scroll1-3">Леонардо</li>
+								<li class="header-bottom__scroll_item scroll1-4">Верроккьо</li>
+							</ul>
+						</div>
+					</div>
+					<div id="item2" class="header-bottom__list_item" tabindex="10">Импрессионизм
+						<div data-simplebar id="scroll2" class="header-bottom__scroll scroll-active">
+							<ul>
+								<li class="header-bottom__scroll_item scroll2-1">Моне</li>
+								<li class="header-bottom__scroll_item scroll2-2">Сислей</li>
+								<li class="header-bottom__scroll_item scroll2-3">Мане</li>
+								<li class="header-bottom__scroll_item scroll2-4">Ренуар</li>
+								<li class="header-bottom__scroll_item scroll2-1">Моне</li>
+								<li class="header-bottom__scroll_item scroll2-2">Сислей</li>
+								<li class="header-bottom__scroll_item scroll2-3">Мане</li>
+								<li class="header-bottom__scroll_item scroll2-4">Ренуар</li>
+							</ul>
+						</div>
+					</div>
+					<div id="item3" class="header-bottom__list_item" tabindex="11">Постимпрессионизм
+						<div data-simplebar id="scroll3" class="header-bottom__scroll scroll-active">
+							<ul>
+								<li class="header-bottom__scroll_item scroll3-1">Ван Гог</li>
+								<li class="header-bottom__scroll_item scroll3-2">Сезанн</li>
+								<li class="header-bottom__scroll_item scroll3-3">Гоген</li>
+								<li class="header-bottom__scroll_item scroll3-4">Сёра</li>
+								<li class="header-bottom__scroll_item scroll3-1">Ван Гог</li>
+								<li class="header-bottom__scroll_item scroll3-2">Сезанн</li>
+								<li class="header-bottom__scroll_item scroll3-3">Гоген</li>
+								<li class="header-bottom__scroll_item scroll3-4">Сёра</li>
+							</ul>
+						</div>
+					</div>
+					<div id="item4" class="header-bottom__list_item" tabindex="12">Авангард
+						<div data-simplebar id="scroll4" class="header-bottom__scroll scroll-active">
+							<ul>
+								<li class="header-bottom__scroll_item scroll4-1">Кандинский</li>
+								<li class="header-bottom__scroll_item scroll4-2">Маринетти</li>
+								<li class="header-bottom__scroll_item scroll4-3">Малевич</li>
+								<li class="header-bottom__scroll_item scroll4-4">Пикассоx</li>
+								<li class="header-bottom__scroll_item scroll4-1">Кандинский</li>
+								<li class="header-bottom__scroll_item scroll4-2">Маринетти</li>
+								<li class="header-bottom__scroll_item scroll4-3">Малевич</li>
+								<li class="header-bottom__scroll_item scroll4-4">Пикассоx</li>
+							</ul>
+						</div>
+					</div>
+					<div id="item5" class="header-bottom__list_item" tabindex="13">Футуризм
+						<div data-simplebar id="scroll5" class="header-bottom__scroll scroll-active">
+							<ul>
+								<li class="header-bottom__scroll_item scroll5-1">Тинторетто</li>
+								<li class="header-bottom__scroll_item scroll5-2">Фридрих</li>
+								<li class="header-bottom__scroll_item scroll5-3">Леонардо</li>
+								<li class="header-bottom__scroll_item scroll5-4">Верроккьо</li>
+								<li class="header-bottom__scroll_item scroll5-1">Тинторетто</li>
+								<li class="header-bottom__scroll_item scroll5-2">Фридрих</li>
+								<li class="header-bottom__scroll_item scroll5-3">Леонардо</li>
+								<li class="header-bottom__scroll_item scroll5-4">Верроккьо</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<form class="header-bottom__form">
+					<button type="submit" class="header-bottom__form_button" tabindex="14" aria-label="Найти"></button>
+					<input type="text" placeholder="Поиск по сайту" class="header-bottom__form_input" aria-label="Найти" tabindex="15">
+				</form>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="hero">
+			<div class="hero-animation"></div>
+			<div class="container hero-container">
+				<h1 class="hero__header"> 
+					Прикоснитесь к прекрасному
+				</h1>
+				<p class="hero__discription">
+					Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
+				</p>
+				<button type="button" class="hero__button" tabindex="16">
+					Подписаться на рассылку
+				</button>
+			</div>
+		</section>
+		<section class="about-us container">
+			<h2 class="about-us__heading">
+				О нас
+			</h2>
+			<p class="about-us__discription">
+				Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
+			</p>
+		</section>
+		<section class="gallery">
+			<div class="container">
+				<h2 class="gallery__heading">Галерея</h2>
+				<div class="flex">
+					<div class="flex-column">
+						<span class="gallery__span">Фильтровать по:</span>
+						<select name="select" id="selectCustom" tabindex="17">
+							<option>Автор</option>
+							<option>Направление</option>
+							<option>Техника</option>
+						</select>
+						<p class="gallery__discription">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <span class="gallery__discription_violet">авторизуйтесь,</span>  либо воспользуйтесь лицензией. </p>
+					</div>
+						<!-- Slider main container -->
+						<div class="swiper-container gallery-swiper">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide gallery-slide">
+									<img data-src="img/gallery1.jpg" data-srcset="img/gallery1-big.jpg 4x" alt="Картина 1" class="gallery-slide__img swiper-lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+								<div class="swiper-slide gallery-slide">
+									<img data-src="img/gallery2.jpg" data-srcset="img/gallery2-big.jpg 4x" alt="Картина 2" class="gallery-slide__img swiper-lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+								<div class="swiper-slide gallery-slide">
+									<img data-src="img/gallery3.jpg" data-srcset="img/gallery3-big.jpg 4x" alt="Картина 3" class="gallery-slide__img swiper-lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+								<div class="swiper-slide gallery-slide">
+									<img data-src="img/gallery4.jpg" data-srcset="img/gallery4-big.jpg 4x" alt="Картина 4" class="gallery-slide__img swiper-lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+								<div class="swiper-slide gallery-slide">
+									<img data-src="img/gallery5.jpg" data-srcset="img/gallery5-big.jpg 4x" alt="Картина 5" class="gallery-slide__img swiper-lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+								<div class="swiper-slide gallery-slide">
+									<img data-src="img/gallery6.jpg" data-srcset="img/gallery6-big.jpg 4x" alt="Картина 6" class="gallery-slide__img swiper-lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+								<div class="swiper-slide gallery-slide">
+									<img data-src="img/gallery7.jpg" data-srcset="img/gallery7-big.jpg 4x" alt="Картина 7" class="gallery-slide__img swiper-lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+								<div class="swiper-slide gallery-slide">
+									<img data-src="img/gallery8.jpg" data-srcset="img/gallery8-big.jpg 4x" alt="Картина 8" class="gallery-slide__img swiper-lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+								<div class="swiper-slide gallery-slide">
+									<img data-src="img/gallery9.jpg" data-srcset="img/gallery9-big.jpg 4x" alt="Картина 9" class="gallery-slide__img swiper-lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+								<div class="swiper-slide gallery-slide">
+									<img data-src="img/gallery10.jpg" data-srcset="img/gallery10-big.jpg 4x" alt="Картина 10" class="gallery-slide__img swiper-lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+								<div class="swiper-slide gallery-slide">
+									<img data-src="img/gallery11.jpg" data-srcset="img/gallery11-big.jpg 4x" alt="Картина 11" class="gallery-slide__img swiper-lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+								<div class="swiper-slide gallery-slide">
+									<img data-src="img/gallery12.jpg" data-srcset="img/gallery12-big.jpg 4x" alt="Картина 12" class="gallery-slide__img swiper-lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+								<div class="swiper-slide gallery-slide">
+									<img data-src="img/gallery13.jpg" data-srcset="img/gallery13-big.jpg 4x" alt="Картина 13" class="gallery-slide__img swiper-lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+								<div class="swiper-slide gallery-slide">
+									<img data-src="img/gallery14.jpg" data-srcset="img/gallery14-big.jpg 4x" alt="Картина 14" class="gallery-slide__img swiper-lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+								<div class="swiper-slide gallery-slide">
+									<img data-src="img/gallery15.jpg" data-srcset="img/gallery15-big.jpg 4x" alt="Картина 15" class="gallery-slide__img swiper-lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+								<div class="swiper-slide gallery-slide">
+									<img data-src="img/gallery16.jpg" data-srcset="img/gallery16-big.jpg 4x" alt="Картина 16" class="gallery-slide__img swiper-lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+								<div class="swiper-slide gallery-slide">
+									<img data-src="img/gallery17.jpg" data-srcset="img/gallery17-big.jpg 4x" alt="Картина 17" class="gallery-slide__img swiper-lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+								<div class="swiper-slide gallery-slide">
+									<img data-src="img/gallery18.jpg" data-srcset="img/gallery18-big.jpg 4x" alt="Картина 18" class="gallery-slide__img swiper-lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+							</div>
+							<!-- If we need pagination -->
+							<div class="swiper-pagination gallery-pagination"></div>
+							<!-- If we need navigation buttons -->
+							<div class="swiper-button-prev" tabindex="18"></div>
+							<div class="swiper-button-next" tabindex="19"></div>
+						</div>
+				</div>
+			</div>
+		</section>
+		<section class="catalog container">
+			<h2 class="catalog__heading">
+				Каталог
+			</h2>
+			<ul class="catalog__tabs">
+				<li class="catalog__tabs_item" tabindex="20"><button class="catalog__tabs_button" data-path="one"></button></li>
+				<li class="catalog__tabs_item" tabindex="21"><button class="catalog__tabs_button" data-path="two"></button></li>
+				<li class="catalog__tabs_item" tabindex="22"><button class="catalog__tabs_button" data-path="three"></button></li>
+				<li class="catalog__tabs_item catalog__discription_desktop" tabindex="23"><button class="catalog__tabs_button" data-path="four"></button></li>
+				<li class="catalog__tabs_item catalog__discription_mobile"><button class="catalog__tabs_button" data-path="four-mobile"></button></li>
+				<li class="catalog__tabs_item" tabindex="24"><button class="catalog__tabs_button" data-path="five"></button></li>
+			</ul>
+			<p class="catalog__discription" data-target="one">
+				Les actionnaires des plus grandes entreprises, qui représentent un exemple frappant de la culture politique de type continental-européen, seront déclarés contraires aux normes universelles d'éthique et de moralité. Ne faisant qu'une partie de l'image globale, cherchant à supplanter la fabrication traditionnelle, la nanotechnologie reste à ce jour le lot des libéraux qui aspirent à être fonctionnellement séparés en éléments indépendants.
+			</p>
+			<p class="catalog__discription" data-target="two">
+				Die Aktionäre der größten Unternehmen, die ein Paradebeispiel der kontinentaleuropäischen Art der politischen Kultur darstellen, werden erklärt, die universellen Normen der Ethik und Moral zu verletzen. Als Teil des Gesamtbildes, das die traditionelle Produktion verdrängen will, bleibt die Nanotechnologie bis heute ein Teil der Liberalen, die sich danach sehnen, funktional in unabhängige Elemente aufgeteilt zu werden.
+			</p>
+			<p class="catalog__discription" data-target="three">
+				Gli azionisti delle maggiori società, che rappresentano un chiaro esempio del tipo di cultura politica continentale-europea, saranno dichiarati in violazione delle norme universali di etica e moralità. Essendo solo una parte del quadro generale che cerca di soppiantare la produzione tradizionale, le nanotecnologie rimangono fino ad oggi un destino di liberali che bramano di essere distanziati funzionalmente in elementi indipendenti.
+			</p>
+			<p class="catalog__discription catalog__discription-active catalog__discription_desktop" data-target="four">
+				Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. 
+			</p>
+			<p class="catalog__discription" data-target="four-mobile">
+				Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. 
+			</p>
+			<p class="catalog__discription" data-target="five">
+				De aandeelhouders van de grootste bedrijven, die een levendig voorbeeld zijn van de continentale Europese politieke cultuur, zullen worden verklaard in strijd met de universele normen van ethiek en moraal. Nanotechnologie is slechts een deel van het totaalbeeld en probeert de traditionele productie te vervangen.tot op de dag van vandaag is nanotechnologie het lot van liberalen, die graag functioneel willen worden gescheiden in onafhankelijke elementen.
+			</p>
+			<div class="catalog-person">
+				<div class="catalog-card catalog-card-active" data-target="seven">
+					<picture class="catalog-card__img">
+						<source media="(min-width: 1025px)" srcset="img/catalog-picture.jpg">
+						<source media="(max-width: 1024px)" srcset="img/catalog-picture1024.jpg">
+						<source media="(max-width: 768px)" srcset="img/catalog-picture768.jpg">
+						<source media="(max-width: 320px)" srcset="img/catalog-picture320.jpg">
+						<img src="img/catalog-picture.jpg" alt="Портрет Доменико Гирландайо">
+					</picture>
+					<h3 class="catalog-card__heading">Доменико Гирландайо</h3>
+					<span class="catalog-card__span">2 июня 1448 — 11 января 1494.</span>
+					<p class="catalog-card__feature">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+				</div>
+				<div class="catalog-card" data-target="six"></div>
+				<div id="accordion">
+					<h3 tabindex="25">C 1400 по 1499 гг.</h3>
+					<div style=" display: flex; flex-wrap: wrap; flex-direction: column;">
+						<button class="accordion-button" data-path="six" tabindex="26">Бенедетто ди Биндо</button>
+						<button class="accordion-button" data-path="six" tabindex="27">Бергоньоне, Амброджо</button>
+						<button class="accordion-button" data-path="six" tabindex="28">Биссоло, Франческо</button>
+						<button class="accordion-button" data-path="six" tabindex="29">Больтраффио, Джованни</button>
+						<button class="accordion-button" data-path="six" tabindex="30">Бонсиньори, Франческо</button>
+						<button class="accordion-button" data-path="six" tabindex="31">Боттичини, Рафаэлло</button>
+						<button class="accordion-button" data-path="six" tabindex="32">Брамантино</button>
+						<button class="accordion-button" data-path="six" tabindex="33">Бреа, Людовико</button>
+						<button class="accordion-button" data-path="six" tabindex="34">Бьяджо д’Антонио Туччи</button>
+						<button class="accordion-button" data-path="six" tabindex="35">Веккьетта</button>
+						<button class="accordion-button" data-path="six" tabindex="36">Андреа Верроккьо</button>
+						<button class="accordion-button" data-path="seven" tabindex="37">Доменико Гирландайо</button>
+						<button class="accordion-button" data-path="six" tabindex="38">Беноццо Гоццоли</button>
+						<button class="accordion-button" data-path="six" tabindex="39">Граначчи, Франческо</button>
+						<button class="accordion-button" data-path="six" tabindex="40">Грегорио ди Чекко</button>
+						<button class="accordion-button" data-path="six" tabindex="41">Джованни да Удине</button>
+						<button class="accordion-button" data-path="six" tabindex="42">Джованни ди Паоло</button>
+						<button class="accordion-button" data-path="six" tabindex="43">Джорджоне</button>
+						<button class="accordion-button" data-path="six" tabindex="44">Парентино, Бернардо</button>
+						<button class="accordion-button" data-path="six" tabindex="45">Пезеллино</button>
+						<button class="accordion-button" data-path="six" tabindex="46">Пьетро Перуджино</button>
+						<button class="accordion-button" data-path="six" tabindex="47">Перуцци, Бальдассаре</button>
+						<button class="accordion-button" data-path="six" tabindex="48">Пизанелло</button>
+						<button class="accordion-button" data-path="six" tabindex="49">Пинтуриккьо</button>
+					</div>
+					<h3 tabindex="50">C 1500 по 1599 гг.</h3>
+					<div></div>
+					<h3 tabindex="51">C 1600 по 1699 гг.</h3>
+					<div></div>
+					<h3 tabindex="52">C 1700 по 1799 гг.</h3>
+					<div></div>
+					<h3 tabindex="53">C 1800 по 1899 гг.</h3>
+					<div></div>
+					<h3 tabindex="54">C 1900 по 1999 гг.</h3>
+					<div></div>
+					<h3 tabindex="55">C 2000 г.</h3>
+					<div></div>
+				</div>
+			</div>
+		</section>
+		<section class="events container">
+			<h2 class="events__heading">События</h2>
+			<ul class="events-list">
+				<li class="events__item">
+					<img src="img/events1.jpg" alt="Событие: Книжная гравюра в живом восприятии" class="events__item_img">
+					<span class="events__span">Музей им. Щусева</span>
+					<span class="events__span">с 20 марта по 30 апреля</span>
+					<h3 class="events__title">Книжная гравюра в живом восприятии</h3>
+					<p class="events__discription">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+					<a href="#" class="events__link" tabindex="56">Подробнее</a>
+				</li>
+				<li class="events__item">
+					<img src="img/events2.jpg" alt="Событие: «Открытая дискуссия». Дмитрий Петров и Сергей Ильин." class="events__item_img">
+					<span class="events__span">ММОМА</span>
+					<span class="events__span">24 марта 19:00</span>
+					<h3 class="events__title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+					<p class="events__discription">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
+					<a href="#" class="events__link" tabindex="57">Подробнее</a>
+				</li>
+				<li class="events__item hidden-768">
+					<img src="img/events3.jpg" alt="Событие: Выставка «Формация 2020»" class="events__item_img">
+					<span class="events__span">Еврейский музей</span>
+					<span class="events__span">с 31 марта по 21 апреля</span>
+					<h3 class="events__title">Выставка «Формация 2020»</h3>
+					<p class="events__discription">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
+					<a href="#" class="events__link" tabindex="58">Подробнее</a>
+				</li>
+				<li class="events__item hidden-desktop hidden-768">
+					<img src="img/events4.jpg" alt="Событие: Двадцатьчетвертая Международная биеннале молодого искусства" class="events__item_img">
+					<span class="events__span">Третьяковка на Крымском валу</span>
+					<span class="events__span">30 марта по 30 апреля</span>
+					<h3 class="events__title">XXIV Международная биеннале молодого искусства</h3>
+					<p class="events__discription">Внезапно, реплицированные с зарубежных источников, современные исследования.</p>
+					<a href="#" class="events__link">Подробнее</a>
+				</li>
+				<li class="events__item hidden-desktop hidden-768">
+					<img src="img/events5.jpg" alt="Событие: Джон Винзор. Фотографии из серии «Метафора серебра»" class="events__item_img">
+					<span class="events__span">ММАМ</span>
+					<span class="events__span">с 8 апреля по 20 мая</span>
+					<h3 class="events__title">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+					<p class="events__discription">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+					<a href="#" class="events__link">Подробнее</a>
+				</li>
+			</ul>
+			<button type="button" class="events__button" tabindex="59">Все события</button>
+			<!-- Slider main container -->
+			<div class="swiper-container events-swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper events-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide events__item">
+						<img src="img/events1.jpg" alt="Событие: Книжная гравюра в живом восприятии" class="events__item_img">
+						<span class="events__span">Музей им. Щусева</span>
+						<span class="events__span">с 20 марта по 30 апреля</span>
+						<h3 class="events__title">Книжная гравюра в живом восприятии</h3>
+						<p class="events__discription">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+						<a href="#" class="events__link">Подробнее</a>
+					</div>
+					<div class="swiper-slide events__item">
+						<img src="img/events2.jpg" alt="Событие: «Открытая дискуссия». Дмитрий Петров и Сергей Ильин." class="events__item_img">
+						<span class="events__span">ММОМА</span>
+						<span class="events__span">24 марта 19:00</span>
+						<h3 class="events__title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+						<p class="events__discription">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
+						<a href="#" class="events__link">Подробнее</a>
+					</div>
+					<div class="swiper-slide events__item">
+						<img src="img/events3.jpg" alt="Событие: Выставка «Формация 2020»" class="events__item_img">
+						<span class="events__span">Еврейский музей</span>
+						<span class="events__span">с 31 марта по 21 апреля</span>
+						<h3 class="events__title">Выставка «Формация 2020»</h3>
+						<p class="events__discription">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
+						<a href="#" class="events__link">Подробнее</a>
+					</div>
+					<div class="swiper-slide events__item">
+						<img src="img/events4.jpg" alt="Событие: Двадцатьчетвертая Международная биеннале молодого искусства" class="events__item_img">
+						<span class="events__span">Третьяковка на Крымском валу</span>
+						<span class="events__span">30 марта по 30 апреля</span>
+						<h3 class="events__title">XXIV Международная биеннале молодого искусства</h3>
+						<p class="events__discription">Внезапно, реплицированные с зарубежных источников, современные исследования.</p>
+						<a href="#" class="events__link">Подробнее</a>
+					</div>
+					<div class="swiper-slide events__item">
+						<img src="img/events5.jpg" alt="Событие: Джон Винзор. Фотографии из серии «Метафора серебра»" class="events__item_img">
+						<span class="events__span">ММАМ</span>
+						<span class="events__span">с 8 апреля по 20 мая</span>
+						<h3 class="events__title">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+						<p class="events__discription">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+						<a href="#" class="events__link">Подробнее</a>
+					</div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination events-pagination"></div>                                                    
+			</div>
+		</section>
+		<section class="edition">
+			<div class="container">
+				<h2 class="edition__heading">Издания</h2>
+				<div class="flex">
+					<div class="flex-column edition-column">
+						<span class="edition__span edition__span_hidden">Категории</span>
+						<ul class="edition-list">
+							<li class="edition-item">
+								<label class="edition__checkbox" tabindex="60">
+									<input type="checkbox" name="check" class="edition__checkbox_input">
+									<small>Бестселлеры</small> 
+									<span></span>
+								</label>
+							</li>
+							<li class="edition-item">
+								<label class="edition__checkbox" tabindex="61">
+									<input type="checkbox" name="check" class="edition__checkbox_input">
+									<small>Искусство</small>
+									<span></span>
+								</label>
+							</li>
+							<li class="edition-item">
+								<label class="edition__checkbox" tabindex="62">
+									<input type="checkbox" name="check" class="edition__checkbox_input">
+									<small>Архитектура</small>
+									<span></span>
+								</label>
+							</li>
+							<li class="edition-item">
+								<label class="edition__checkbox" tabindex="63">
+									<input type="checkbox" name="check" checked class="edition__checkbox_input">
+									<small>Дизайн</small>
+									<span></span>
+								</label>
+							</li>
+							<li class="edition-item">
+								<label class="edition__checkbox" tabindex="64">
+									<input type="checkbox" name="check" class="edition__checkbox_input">
+									<small>Мода</small>
+									<span></span>
+								</label>
+							</li>
+							<li class="edition-item">
+								<label class="edition__checkbox" tabindex="65">
+									<input type="checkbox" name="check" class="edition__checkbox_input">
+									<small>Детям</small>
+									<span></span>
+								</label>
+							</li>
+							<li class="edition-item">
+								<label class="edition__checkbox" tabindex="66">
+									<input type="checkbox" name="check" class="edition__checkbox_input">
+									<small>Художественная литература</small>
+									<span></span>
+								</label>
+							</li>
+							<li class="edition-item">
+								<label class="edition__checkbox" tabindex="67">
+									<input type="checkbox" name="check" class="edition__checkbox_input">
+									<small>Публицистика</small>
+									<span></span>
+								</label>
+							</li>
+							<li class="edition-item">
+								<label class="edition__checkbox" tabindex="68">
+									<input type="checkbox" name="check" class="edition__checkbox_input">
+									<small>Путеводители</small>
+									<span></span>
+								</label>
+							</li>
+							<li class="edition-item">
+								<label class="edition__checkbox" tabindex="69">
+									<input type="checkbox" name="check" class="edition__checkbox_input">
+									<small>Философия</small>
+									<span></span>
+								</label>
+							</li>
+							<li class="edition-item">
+								<label class="edition__checkbox" tabindex="70">
+									<input type="checkbox" name="check" class="edition__checkbox_input">
+									<small>Учебная литература</small>
+									<span></span>
+								</label>
+							</li>
+							<li class="edition-item">
+								<label class="edition__checkbox" tabindex="71">
+									<input type="checkbox" name="check" class="edition__checkbox_input">
+									<small>Журналы и газеты</small>
+									<span></span>
+								</label>
+							</li>
+						</ul>
+						<div id="edition__accordion" class="edition__accordion">
+							<h3>Категории</h3>
+							<div>
+								<ul>
+									<li class="edition-item">
+										<label class="edition__checkbox">
+											<input type="checkbox" name="check" onchange="check()" id="accordion-check" class="edition__checkbox_input">
+											<small>Бестселлеры</small> 
+											<span></span>
+										</label>
+									</li>
+									<li class="edition-item">
+										<label class="edition__checkbox">
+											<input type="checkbox" name="check" class="edition__checkbox_input">
+											<small>Искусство</small>
+											<span></span>
+										</label>
+									</li>
+									<li class="edition-item">
+										<label class="edition__checkbox">
+											<input type="checkbox" name="check" class="edition__checkbox_input">
+											<small>Архитектура</small>
+											<span></span>
+										</label>
+									</li>
+									<li class="edition-item">
+										<label class="edition__checkbox">
+											<input type="checkbox" name="check" checked class="edition__checkbox_input">
+											<small>Дизайн</small>
+											<span></span>
+										</label>
+									</li>
+									<li class="edition-item">
+										<label class="edition__checkbox">
+											<input type="checkbox" name="check" class="edition__checkbox_input">
+											<small>Мода</small>
+											<span></span>
+										</label>
+									</li>
+									<li class="edition-item">
+										<label class="edition__checkbox">
+											<input type="checkbox" name="check" class="edition__checkbox_input">
+											<small>Детям</small>
+											<span></span>
+										</label>
+									</li>
+									<li class="edition-item">
+										<label class="edition__checkbox">
+											<input type="checkbox" name="check" class="edition__checkbox_input">
+											<small>Художественная литература</small>
+											<span></span>
+										</label>
+									</li>
+									<li class="edition-item">
+										<label class="edition__checkbox">
+											<input type="checkbox" name="check" class="edition__checkbox_input">
+											<small>Публицистика</small>
+											<span></span>
+										</label>
+									</li>
+									<li class="edition-item">
+										<label class="edition__checkbox">
+											<input type="checkbox" name="check" class="edition__checkbox_input">
+											<small>Путеводители</small>
+											<span></span>
+										</label>
+									</li>
+									<li class="edition-item">
+										<label class="edition__checkbox">
+											<input type="checkbox" name="check" class="edition__checkbox_input">
+											<small>Философия</small>
+											<span></span>
+										</label>
+									</li>
+									<li class="edition-item">
+										<label class="edition__checkbox">
+											<input type="checkbox" name="check" class="edition__checkbox_input">
+											<small>Учебная литература</small>
+											<span></span>
+										</label>
+									</li>
+									<li class="edition-item">
+										<label class="edition__checkbox">
+											<input type="checkbox" name="check" class="edition__checkbox_input">
+											<small>Журналы и газеты</small>
+											<span></span>
+										</label>
+									</li>
+								</ul>
+							</div>
+						  </div>
+						<span class="edition__span">Цена</span>
+						<div class="edition__input">
+							<span class="edition__input_span">От</span>
+							<input type="number" name="number" autocomplete="off" max="25000" min="50" placeholder="50" class="edition__input_number" tabindex="72">
+							<span class="edition__input_span">до</span>
+							<input type="number" name="number" autocomplete="off" max="25000" min="50" placeholder="25000" class="edition__input_number" tabindex="73">
+							<span class="edition__input_span">руб.</span>
+						</div>
+					</div>
+						<!-- Slider main container -->
+						<div class="swiper-container edition-swiper">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+									<div class="swiper-slide edition-slide">
+										<img src="img/edition1.jpg" alt="Издание" class="swiper-img">
+										<div class="swiper-span-flex">
+											<div class="swiper-span-div">
+												<span class="swiper-normal swiper-bold">Искусство цвета</span>
+												<span class="swiper-normal">Иттен, Иоханнес</span>
+											</div>
+											<span class="swiper-italic">620 руб</span>
+										</div>
+										<button type="button" class="swiper-button">Заказать</button>
+									</div>
+									<div class="swiper-slide edition-slide">
+										<img src="img/edition2.jpg" alt="Издание" class="swiper-img">
+										<div class="swiper-span-flex">
+											<div class="swiper-span-div">
+												<span class="swiper-normal swiper-bold">Типографика </span>
+												<span class="swiper-normal"> Рудер, Эмиль</span>
+											</div>
+											<span class="swiper-italic">2 450 руб</span>
+										</div>
+										<button type="button" class="swiper-button">Заказать</button>
+									</div>
+									<div class="swiper-slide edition-slide">
+										<img src="img/edition3.jpg" alt="Издание" class="swiper-img">
+										<div class="swiper-span-flex">
+											<div class="swiper-span-div">
+												<span class="swiper-normal swiper-bold">Книга про буквы</span>
+												<span class="swiper-normal">Гордон, Юрий</span>
+											</div>
+											<span class="swiper-italic">2 200 руб</span>
+										</div>
+										<button type="button" class="swiper-button">Заказать</button>
+									</div>
+									<div class="swiper-slide edition-slide">
+										<img src="img/edition4.jpg" alt="Издание" class="swiper-img">
+										<div class="swiper-span-flex">
+											<div class="swiper-span-div">
+												<span class="swiper-normal-middle swiper-bold">Николай Ильин</span>
+												<span class="swiper-normal-middle">Кричевский, Владимир</span>
+											</div>
+											<span class="swiper-italic">1 100 руб</span>
+										</div>
+										<button type="button" class="swiper-button">Заказать</button>
+									</div>
+									<div class="swiper-slide edition-slide">	
+										<img src="img/edition5.jpg" alt="Издание" class="swiper-img">
+										<div class="swiper-span-flex">
+											<div class="swiper-span-div">
+												<span class="swiper-normal-wide swiper-bold">Модульные сетки в граф...</span>
+												<span class="swiper-normal-wide">Мюллер-Брокманн, Йозеф</span>
+											</div>
+											<span class="swiper-italic">1 450 руб</span>
+										</div>
+										<button type="button" class="swiper-button">Заказать</button>
+									</div>
+									<div class="swiper-slide edition-slide">	
+										<img src="img/edition6.jpg" alt="Издание" class="swiper-img">
+										<div class="swiper-span-flex">
+											<div class="swiper-span-div">
+												<span class="swiper-normal-wide swiper-bold">Эволюция графических ст...</span>
+												<span class="swiper-normal-wide">Хеллер, Чваст</span>
+											</div>
+											<span class="swiper-italic">3 200 руб</span>
+										</div>
+										<button type="button" class="swiper-button">Заказать</button>
+									</div>
+									<div class="swiper-slide edition-slide">
+										<img src="img/edition7.jpg" alt="Издание" class="swiper-img">
+										<div class="swiper-span-flex">
+											<div class="swiper-span-div">
+												<span class="swiper-normal-wide swiper-bold">Искусство и визуальное в...</span>
+												<span class="swiper-normal-wide">Арнхейм, Рудольф</span>
+											</div>
+											<span class="swiper-italic">2 200 руб</span>
+										</div>
+										<button type="button" class="swiper-button">Заказать</button>
+									</div>
+							</div>
+							<!-- If we need pagination -->
+							<div class="swiper-pagination editions-pagination"></div>
+							<!-- If we need navigation buttons -->
+							<div class="swiper-button-prev editions-button-prev" tabindex="74"></div>
+							<div class="swiper-button-next editions-button-next" tabindex="75"></div>
+						</div>
+				</div>
+			</div>
+		</section>
+		<section class="projects container">
+			<h2 class="projects__heading">Проекты</h2>
+			<p class="projects__discription">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское<button class="projects__discription_tooltip" tabindex="76">
+				<div class="projects__discription_tooltip-marker"></div>
+				<div class="projects__discription_tooltip-popup popup1">
+					Пример современных тенденций - современная методология разработки 
+				</div>
+			</button>обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены<button class="projects__discription_tooltip" tabindex="77">
+				<div class="projects__discription_tooltip-marker"></div>
+				<div class="projects__discription_tooltip-popup popup2">
+			  		Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции  
+				</div>
+			</button>исключительно в разрезе маркетинговых и финансовых<button class="projects__discription_tooltip" tabindex="78">
+				<div class="projects__discription_tooltip-marker"></div>
+				<div class="projects__discription_tooltip-popup popup3">
+					В стремлении повысить качество 
+				</div>
+			</button>предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a href="#" class="projects__discription_link" tabindex="79">blanchard-art.ru/projects/about</a></p>
+			<h3 class="projects__heading-slider">Партнёры проектов:</h3>
+			<!-- Slider main container -->
+			<div class="swiper-container projects-swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide projects-slide">
+						<div class="slide-img slide-img1"></div>
+					</div>
+					<div class="swiper-slide projects-slide">
+						<div class="slide-img slide-img2"></div>
+					</div>
+					<div class="swiper-slide projects-slide">
+						<div class="slide-img slide-img3"></div>
+					</div>
+					<div class="swiper-slide projects-slide">
+						<div class="slide-img slide-img4"></div>
+					</div>
+					<div class="swiper-slide projects-slide">
+						<div class="slide-img slide-img5"></div>
+					</div>
+					<div class="swiper-slide projects-slide">
+						<div class="slide-img slide-img6"></div>
+					</div>
+					<div class="swiper-slide projects-slide">
+						<div class="slide-img slide-img7"></div>
+					</div>
+					<div class="swiper-slide projects-slide">
+						<div class="slide-img slide-img8"></div>
+					</div>
+					<div class="swiper-slide projects-slide">
+						<div class="slide-img slide-img9"></div>
+					</div>
+				</div>
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev projects-button-prev" tabindex="80"></div>
+				<div class="swiper-button-next projects-button-next" tabindex="81"></div>
+			</div>
+		</section>
+		<section class="contacts">
+			<h2 class="contacts__heading">Контакты</h2>
+			<div class="contacts-flex">
+				<div class="contacts__column">
+					<span class="contacts__column_span">Шоурум №4</span>
+					<address class="contacts__column_address">Леонтьевский переулок, дом 5, строение 1</address>
+					<h3 class="contacts__column_title">Заказать обратный звонок</h3>
+					<form action="php/mail.php" autocomplete="on" method="POST" class="contacts__column_form">
+						<input type="text" name="name" placeholder="Имя*" minlength="2" pattern="[A-Za-zА-Яа-яЁё]+" required class="contacts__column_form-input" tabindex="82">
+						<input type="tel" name="phone" placeholder="Телефон*" minlength="10" required class="contacts__column_form-input" tabindex="83">
+						<button type="submit" class="contacts__column_form-button" tabindex="84">Заказать</button>
+					</form>
+					<h3 class="contacts__column_title contacts__column_title-320">Связаться в один клик</h3>
+					<a href="#" class="contacts__column_link contacts-whatsapp" tabindex="85"></a>
+					<a href="#" class="contacts__column_link contacts-telegram" tabindex="86"></a>
+				</div>
+				<div class="contacts__map" id="map"></div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container footer-container">
+			<img src="img/logo.svg" alt="Логотип Blanchard" class="logo footer__logo">
+			<ul class="footer__network">
+				<li class="footer__network_item"><a href="#" class="footer__network_item-link footer-vk" tabindex="87"></a></li>
+				<li class="footer__network_item"><a href="#" class="footer__network_item-link footer-instagram" tabindex="88"></a></li>
+				<li class="footer__network_item"><a href="#" class="footer__network_item-link footer-fb" tabindex="89"></a></li>
+			</ul>
+		</div>
+	</footer>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/choices.min.js"></script>
+	<script src="js/jquery-1.12.4.js"></script>
+  	<script src="js/jquery-ui.js"></script>
+	<script src="js/inputmask.min.js"></script>
+	<script src="js/api-maps.js"></script>
+	<script src="js/simplebar.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
