@@ -1,3 +1,8 @@
+"use strict";
+
+//Ленивая загрузка изображений
+lazyload();
+
 //Cвайперы
 const swiper1 = new Swiper('.gallery-swiper', {
 	preloadImages: false,
@@ -92,7 +97,7 @@ const swiper3 = new Swiper('.projects-swiper', {
 			slidesPerGroup: 2,
 		},
 		1440: {
-			spaceBetween: 50,
+			spaceBetween: 57,
 			slidesPerView: 3,
 			slidesPerGroup: 3,
 		},
@@ -188,14 +193,8 @@ document.querySelector('#item5').addEventListener('click', function() {
 
 //Бургер раскрытие
 document.querySelector('.header-top__burger').addEventListener('click', function() {
-	document.querySelector('.header-top__list').classList.toggle('menu-active')
-})
-
-document.querySelector('.header-top__burger').addEventListener('click', function() {
-	document.querySelector('.header-top__link').classList.toggle('link-active')
-})
-
-document.querySelector('.header-top__burger').addEventListener('click', function() {
+	document.querySelector('.header-top__list').classList.toggle('menu-active'),
+	document.querySelector('.header-top__link').classList.toggle('link-active'),
 	document.querySelector('burger-active').classList.toggle('.header-top__burger')
 })
 
@@ -208,43 +207,28 @@ function myFunction() {
 
 //Форма хедер
 document.querySelector('.header-top__form_button').addEventListener('click', function() {
-	document.querySelector('.header-top__form_input').classList.toggle('header-top__form_input-active')
-})
-
-document.querySelector('.header-top__form_button').addEventListener('click', function() {
-	document.querySelector('.header-top__form').classList.toggle('header-top__form-active')
-})
-
-document.querySelector('.header-top__form_button').addEventListener('click', function() {
-	document.querySelector('.logo').classList.toggle('display-none')
-})
-
-document.querySelector('.header-top__form_button').addEventListener('click', function() {
-	document.querySelector('.header-top__burger').classList.toggle('display-none')
-})
-
-document.querySelector('.header-top__form_button').addEventListener('click', function() {
-	document.querySelector('.header-top__cross-hidden').classList.toggle('header-top__cross')
-})
-
-document.querySelector('.header-top__form_button').addEventListener('click', function() {
-	document.querySelector('.header-top').classList.toggle('header-top-open320')
-})
-
-document.querySelector('.header-top__form_button').addEventListener('click', function() {
+	document.querySelector('.header-top__form_input').classList.toggle('header-top__form_input-active'),
+	document.querySelector('.header-top__form').classList.toggle('header-top__form-active'),
+	document.querySelector('.logo').classList.toggle('display-none'),
+	document.querySelector('.header-top__burger').classList.toggle('display-none'),
+	document.querySelector('.header-top__cross-hidden').classList.toggle('header-top__cross'),
+	document.querySelector('.header-top').classList.toggle('header-top-open320'),
 	document.querySelector('.header-top__form_button').classList.toggle('header-top__form_button-320')
+})
+
+document.querySelector('.header-top__cross-hidden').addEventListener('click', function() {
+	document.querySelector('.header-top-open320').classList.toggle('header-top-close'),
+	document.querySelector('.header-top__form_input-active').classList.toggle('display-none'),
+	document.querySelector('.header-top__cross').classList.toggle('header-top__cross-close'),
+	document.querySelector('.display-none').classList.toggle('display-block'),
+	document.querySelector('.logo').classList.toggle('display-block'),
+	document.querySelector('.header-top__form_button').classList.toggle('header-top__form_button-one')
 })
 
 //События 
 document.querySelector('.events__button').addEventListener('click', function() {
-	document.querySelector('.events__button').classList.toggle('events__button_hidden')
-})
-
-document.querySelector('.events__button').addEventListener('click', function() {
-	document.querySelector('.hidden-desktop').classList.toggle('visible-events')
-})
-
-document.querySelector('.events__button').addEventListener('click', function() {
+	document.querySelector('.events__button').classList.toggle('events__button_hidden'),
+	document.querySelector('.hidden-desktop').classList.toggle('visible-events'),
 	document.querySelector('.hidden-768').classList.toggle('visible-events')
 })
 
