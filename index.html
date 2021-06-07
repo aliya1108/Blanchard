@@ -257,11 +257,11 @@
 			<h2 class="catalog__heading">
 				Каталог
 			</h2>
-			<ul class="catalog__tabs">
+			<ul class="catalog__tabs" id="catalog__tabs">
 				<li class="catalog__tabs_item"><button class="catalog__tabs_button" data-path="one"></button></li>
 				<li class="catalog__tabs_item"><button class="catalog__tabs_button" data-path="two"></button></li>
 				<li class="catalog__tabs_item"><button class="catalog__tabs_button" data-path="three"></button></li>
-				<li class="catalog__tabs_item catalog__discription_desktop"><button class="catalog__tabs_button" data-path="four"></button></li>
+				<li class="catalog__tabs_item catalog__discription_desktop"><button class="catalog__tabs_button catalog__tabs_button-active" data-path="four"></button></li>
 				<li class="catalog__tabs_item catalog__discription_mobile"><button class="catalog__tabs_button" data-path="four-mobile"></button></li>
 				<li class="catalog__tabs_item"><button class="catalog__tabs_button" data-path="five"></button></li>
 			</ul>
@@ -299,7 +299,7 @@
 				<div class="catalog-card" data-target="six"></div>
 				<div id="accordion">
 					<h3>C 1400 по 1499 гг.</h3>
-					<div style=" display: flex; flex-wrap: wrap; flex-direction: column;">
+					<div id="accordion-buttons" style="display: flex; flex-wrap: wrap; flex-direction: column;">
 						<button class="accordion-button" data-path="six">Бенедетто ди Биндо</button>
 						<button class="accordion-button" data-path="six">Бергоньоне, Амброджо</button>
 						<button class="accordion-button" data-path="six">Биссоло, Франческо</button>
@@ -311,7 +311,7 @@
 						<button class="accordion-button" data-path="six">Бьяджо д’Антонио Туччи</button>
 						<button class="accordion-button" data-path="six">Веккьетта</button>
 						<button class="accordion-button" data-path="six">Андреа Верроккьо</button>
-						<button class="accordion-button" data-path="seven">Доменико Гирландайо</button>
+						<button class="accordion-button accordion-button-active" data-path="seven">Доменико Гирландайо</button>
 						<button class="accordion-button" data-path="six">Беноццо Гоццоли</button>
 						<button class="accordion-button" data-path="six">Граначчи, Франческо</button>
 						<button class="accordion-button" data-path="six">Грегорио ди Чекко</button>
@@ -771,10 +771,10 @@
 						<div class="slide-img slide-img9"></div>
 					</div>
 				</div>
-				<!-- If we need navigation buttons -->
-				<div class="swiper-button-prev projects-button-prev"></div>
-				<div class="swiper-button-next projects-button-next"></div>
 			</div>
+							<!-- If we need navigation buttons -->
+							<div class="swiper-button-prev projects-button-prev"></div>
+							<div class="swiper-button-next projects-button-next"></div>
 		</section>
 		<section class="contacts">
 			<h2 class="contacts__heading">Контакты</h2>
