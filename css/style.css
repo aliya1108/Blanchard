@@ -207,7 +207,7 @@ img {
 }
 
 .header-bottom__list_item:focus {
-  outline-offset: 11px;
+  outline-offset: 15px;
 }
 
 .header-bottom__list_item:hover {
@@ -305,83 +305,83 @@ img {
 }
 
 .scroll1-1 {
-  background-image: url('../img/scroll1-1.jpg');
+  background-image: url('../img/scroll1-1.webp');
 }
 
 .scroll1-2 {
-  background-image: url('../img/scroll1-2.jpg');
+  background-image: url('../img/scroll1-2.webp');
 }
 
 .scroll1-3 {
-  background-image: url('../img/scroll1-3.jpg');
+  background-image: url('../img/scroll1-3.webp');
 }
 
 .scroll1-4 {
-  background-image: url('../img/scroll1-4.jpg');
+  background-image: url('../img/scroll1-4.webp');
 }
 
 .scroll2-1 {
-  background-image: url('../img/scroll2-1.jpg');
+  background-image: url('../img/scroll2-1.webp');
 }
 
 .scroll2-2 {
-  background-image: url('../img/scroll2-2.jpg');
+  background-image: url('../img/scroll2-2.webp');
 }
 
 .scroll2-3 {
-  background-image: url('../img/scroll2-3.jpg');
+  background-image: url('../img/scroll2-3.webp');
 }
 
 .scroll2-4 {
-  background-image: url('../img/scroll2-4.jpg');
+  background-image: url('../img/scroll2-4.webp');
 }
 
 .scroll3-1 {
-  background-image: url('../img/scroll3-1.jpg');
+  background-image: url('../img/scroll3-1.webp');
 }
 
 .scroll3-2 {
-  background-image: url('../img/scroll3-2.jpg');
+  background-image: url('../img/scroll3-2.webp');
 }
 
 .scroll3-3 {
-  background-image: url('../img/scroll3-3.jpg');
+  background-image: url('../img/scroll3-3.webp');
 }
 
 .scroll3-4 {
-  background-image: url('../img/scroll3-4.jpg');
+  background-image: url('../img/scroll3-4.webp');
 }
 
 .scroll4-1 {
-  background-image: url('../img/scroll4-1.jpg');
+  background-image: url('../img/scroll4-1.webp');
 }
 
 .scroll4-2 {
-  background-image: url('../img/scroll4-2.jpg');
+  background-image: url('../img/scroll4-2.webp');
 }
 
 .scroll4-3 {
-  background-image: url('../img/scroll4-3.jpg');
+  background-image: url('../img/scroll4-3.webp');
 }
 
 .scroll4-4 {
-  background-image: url('../img/scroll4-4.jpg');
+  background-image: url('../img/scroll4-4.webp');
 }
 
 .scroll5-1 {
-  background-image: url('../img/scroll5-1.jpg');
+  background-image: url('../img/scroll5-1.webp');
 }
 
 .scroll5-2 {
-  background-image: url('../img/scroll5-2.jpg');
+  background-image: url('../img/scroll5-2.webp');
 }
 
 .scroll5-3 {
-  background-image: url('../img/scroll5-3.jpg');
+  background-image: url('../img/scroll5-3.webp');
 }
 
 .scroll5-4 {
-  background-image: url('../img/scroll5-4.jpg');
+  background-image: url('../img/scroll5-4.webp');
 }
 
 .header-bottom__form {
@@ -444,7 +444,7 @@ img {
   z-index: -1;
   width: 100%;
   height: 100%;
-  background-image: url('../img/hero.jpg');
+  background-image: url('../img/hero.webp');
   background-repeat: no-repeat;
   background-size: cover;
   animation: scale 10s ease-in-out infinite;
@@ -537,7 +537,7 @@ img {
   padding-top: 85px;
   box-sizing: border-box;
   color: var(--color_white);
-  background-image: url('../img/gallery-background.jpg');
+  background-image: url('../img/gallery-background.webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -845,7 +845,12 @@ img {
 } 
 
 .catalog__tabs_button-active {
-  border: red 2px solid;
+  position: absolute;
+  top: -11px;
+  left: -11px;
+  padding: 10px;
+  border: 2px solid #7943A4;
+  box-sizing: content-box;
 }
 
 .catalog__discription_mobile {
@@ -1008,6 +1013,10 @@ img {
   text-align: left;
 }
 
+.accordion-button-active {
+  color: var(--color_violet);
+}
+
 .events {
   margin-top: 85px;
 }
@@ -1144,7 +1153,7 @@ img {
   padding-top: 85px;
   box-sizing: border-box;
   color: var(--color_white);
-  background: url('../img/edition-background.jpg');
+  background: url('../img/edition-background.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1405,6 +1414,7 @@ img {
 }
 
 .projects {
+  position: relative;
   padding-top: 85px;
 }
 
@@ -1529,10 +1539,7 @@ img {
 }
 
 .projects-swiper {
-  margin-left: 0;
-  padding-left: 75px;
-  padding-right: 86px;
-  width: 90%;
+  width: 1463px;
   max-height: 155px;
 }
 
@@ -1622,10 +1629,7 @@ img {
 }
 
 .projects-button-prev, .projects-button-next {
-  top: 40%;
-}
-
-.projects-button-next, .projects-button-prev {
+  top: 551px;
   background-image: url('../img/swiper-button-projects.svg');
 }
 
@@ -1970,7 +1974,7 @@ img {
   }
 
   .hero-animation {
-    background-image: url('../img/hero1024.jpg');
+    background-image: url('../img/hero1024.webp');
   }
   
   .hero__header {
@@ -2022,7 +2026,7 @@ img {
   .gallery {
     max-width: 1024px;
     height: 839px;
-    background-image: url('../img/gallery-background1024.jpg');
+    background-image: url('../img/gallery-background1024.webp');
   }
   
   .flex-column {
@@ -2244,7 +2248,7 @@ img {
   
   .edition {
     max-width: 1024px;
-    background: url('../img/edition-background1024.jpg');
+    background: url('../img/edition-background1024.webp');
   }
 
   .edition__heading {
@@ -2503,14 +2507,14 @@ img {
   }
 
   .hero-animation {
-    background-image: url('../img/hero768.jpg');
+    background-image: url('../img/hero768.webp');
   }
 
   .gallery {
     position: relative;
     max-width: 768px;
     height: 1169px;
-    background-image: url('../img/gallery-background768.jpg');
+    background-image: url('../img/gallery-background768.webp');
   }   
 
   .flex {
@@ -2623,7 +2627,7 @@ img {
   .edition {
     max-width: 768px;
     height: 1048px;
-    background-image: url('../img/edition-background768.jpg');
+    background-image: url('../img/edition-background768.webp');
   }
 
   .edition-list {
@@ -2911,7 +2915,7 @@ img {
   }
   
   .hero-animation {
-    background-image: url('../img/hero320.jpg');
+    background-image: url('../img/hero320.webp');
   }
 
   .hero__header {
@@ -2971,7 +2975,7 @@ img {
     padding-top: 55px;
     max-width: 320px;
     height: 962px;
-    background-image: url('../img/gallery-background320.jpg');
+    background-image: url('../img/gallery-background320.webp');
   }
 
   .gallery__heading {
@@ -3188,7 +3192,7 @@ img {
     padding-top: 54px;
     max-width: 320px;
     height: 1962px;
-    background-image: url('../img/edition-background320.jpg');
+    background-image: url('../img/edition-background320.webp');
   }
 
   .edition__heading {
