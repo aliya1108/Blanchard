@@ -130,11 +130,21 @@ document.querySelectorAll('.catalog__tabs_button').forEach(function(flag) {
 	})
 })
 
+$("#catalog__tabs").on("click", ".catalog__tabs_button", function() {
+	$("#catalog__tabs .catalog__tabs_button").removeClass("catalog__tabs_button-active"); //удаляем класс во всех вкладках
+	$(this).addClass("catalog__tabs_button-active"); //добавляем класс текущей (нажатой)
+});		
+
 //Аккардеон каталог
 $( function() {
 	$( "#accordion" ).accordion({
 		collapsible: true
 	});
+});
+
+$("#accordion-buttons").on("click", ".accordion-button", function(){
+	$("#accordion-buttons .accordion-button").removeClass("accordion-button-active"); //удаляем класс во всех вкладках
+	$(this).addClass("accordion-button-active"); //добавляем класс текущей (нажатой)
 });
 
 //Табы в аккардеоне
@@ -227,9 +237,15 @@ document.querySelector('.header-top__cross-hidden').addEventListener('click', fu
 
 //События 
 document.querySelector('.events__button').addEventListener('click', function() {
-	document.querySelector('.events__button').classList.toggle('events__button_hidden'),
-	document.querySelector('.hidden-desktop').classList.toggle('visible-events'),
-	document.querySelector('.hidden-768').classList.toggle('visible-events')
+	document.querySelector('.events__button').classList.toggle('events__button_hidden')
+})
+
+document.querySelector('.events__button').addEventListener('click', function() {
+	document.querySelectorAll('.hidden-desktop').forEach(function (el1) {
+		el1.addEventListener('click', function (event1) {
+			event1.target.classList.toggle('visible-events')
+		})
+	})
 })
 
 //Аккардеон издания
