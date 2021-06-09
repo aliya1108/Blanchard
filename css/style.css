@@ -1129,7 +1129,7 @@ img {
 }
 
 .visible-events {
-  display: block;
+  display: flex;
 }
 
 @keyframes opacity {
