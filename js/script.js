@@ -241,10 +241,8 @@ document.querySelector('.events__button').addEventListener('click', function() {
 })
 
 document.querySelector('.events__button').addEventListener('click', function() {
-	document.querySelectorAll('.hidden-desktop').forEach(function (el1) {
-		el1.addEventListener('click', function (event1) {
-			event1.target.classList.toggle('visible-events')
-		})
+	document.querySelectorAll('.hidden-desktop').forEach(function (visible) {
+		visible.target.classList.toggle('visible-events')
 	})
 })
 
