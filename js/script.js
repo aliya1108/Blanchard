@@ -123,10 +123,10 @@ const element = document.querySelector ('#selectCustom');
 document.querySelectorAll('.catalog__tabs_button').forEach(function(flag) {
 	flag.addEventListener('click', function(event) {
 		const path = event.currentTarget.dataset.path
-		document.querySelectorAll('.catalog__discription').forEach(function(tabDiscription) {
-			tabDiscription.classList.remove('catalog__discription-active')
+		document.querySelectorAll('.catalog__description').forEach(function(tabdescription) {
+			tabdescription.classList.remove('catalog__description-active')
 		})
-		document.querySelector(`[data-target="${path}"]`).classList.add('catalog__discription-active')
+		document.querySelector(`[data-target="${path}"]`).classList.add('catalog__description-active')
 	})
 })
 
