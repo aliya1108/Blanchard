@@ -20,32 +20,32 @@
 	<header class="header">
 		<div class="header-top">
 			<div class="container header-container">
-				<button id="burger" class="header-top__burger">
+				<button type="menu" id="burger" class="header-top__burger">
 					<span></span>
 				</button>
 				<img src="img/logo.svg" alt="Логотип Blanchard" class="logo">
 				<nav>
 					<ul class="header-top__list menu-active">
 						<li>
-							<a href="" class="header-top__list_item">О нас</a>
+							<a href="" class="header-top__item">О нас</a>
 						</li>
 						<li>
-							<a href="" class="header-top__list_item">Галерея</a>
+							<a href="" class="header-top__item">Галерея</a>
 						</li>
 						<li>
-							<a href="" class="header-top__list_item">Каталог</a>
+							<a href="" class="header-top__item">Каталог</a>
 						</li>
 						<li>
-							<a href="" class="header-top__list_item">События</a>
+							<a href="" class="header-top__item">События</a>
 						</li>
 						<li>
-							<a href="" class="header-top__list_item">Издания</a>
+							<a href="" class="header-top__item">Издания</a>
 						</li>
 						<li>
-							<a href="" class="header-top__list_item">Проекты</a>
+							<a href="" class="header-top__item">Проекты</a>
 						</li>
 						<li>
-							<a href="" class="header-top__list_item">Контакты</a>
+							<a href="" class="header-top__item">Контакты</a>
 						</li>
 					</ul>
 				</nav>
@@ -61,7 +61,7 @@
 			<div class="container header-container">
 				<ul class="header-bottom__list">
 					<li>
-						<button id="item1" class="header-bottom__list_item">Реализм
+						<button id="item1" class="header-bottom__item">Реализм
 							<div data-simplebar id="scroll1" class="header-bottom__scroll scroll-active">
 								<ul>
 									<li class="header-bottom__scroll_item scroll1-1">Тинторетто</li>
@@ -77,7 +77,7 @@
 						</button>
 					</li>
 					<li>
-						<button id="item2" class="header-bottom__list_item">Импрессионизм
+						<button id="item2" class="header-bottom__item">Импрессионизм
 							<div data-simplebar id="scroll2" class="header-bottom__scroll scroll-active">
 								<ul>
 									<li class="header-bottom__scroll_item scroll2-1">Моне</li>
@@ -93,7 +93,7 @@
 						</button>
 					</li>
 					<li>
-						<button id="item3" class="header-bottom__list_item">Постимпрессионизм
+						<button id="item3" class="header-bottom__item">Постимпрессионизм
 							<div data-simplebar id="scroll3" class="header-bottom__scroll scroll-active">
 								<ul>
 									<li class="header-bottom__scroll_item scroll3-1">Ван Гог</li>
@@ -109,7 +109,7 @@
 						</button>
 					</li>
 					<li>
-						<button id="item4" class="header-bottom__list_item">Авангард
+						<button id="item4" class="header-bottom__item">Авангард
 							<div data-simplebar id="scroll4" class="header-bottom__scroll scroll-active">
 								<ul>
 									<li class="header-bottom__scroll_item scroll4-1">Кандинский</li>
@@ -125,7 +125,7 @@
 						</button>
 					</li>
 					<li>
-						<button id="item5" class="header-bottom__list_item">Футуризм
+						<button id="item5" class="header-bottom__item">Футуризм
 							<div data-simplebar id="scroll5" class="header-bottom__scroll scroll-active">
 								<ul>
 									<li class="header-bottom__scroll_item scroll5-1">Тинторетто</li>
@@ -152,10 +152,10 @@
 		<section class="hero">
 			<div class="hero-animation"></div>
 			<div class="container hero-container">
-				<h1 class="hero__header"> 
+				<p class="hero__header"> 
 					Прикоснитесь к прекрасному
-				</h1>
-				<p class="hero__discription">
+				</p>
+				<p class="hero__description">
 					Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
 				</p>
 				<button type="button" class="hero__button">
@@ -164,17 +164,17 @@
 			</div>
 		</section>
 		<section class="about-us container">
-			<h2 class="about-us__heading">
+			<h2 class="h2 about-us__heading">
 				О нас
 			</h2>
-			<p class="about-us__discription">
+			<p class="about-us__description">
 				Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
 			</p>
 		</section>
 		<section class="gallery">
 			<div class="container">
-				<h2 class="gallery__heading">Галерея</h2>
-				<div class="flex">
+				<h2 class="h2 gallery__heading">Галерея</h2>
+				<div class="container-line">
 					<div class="flex-column">
 						<span class="gallery__span">Фильтровать по:</span>
 						<select name="select" id="selectCustom">
@@ -182,7 +182,7 @@
 							<option>Направление</option>
 							<option>Техника</option>
 						</select>
-						<p class="gallery__discription">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <span class="gallery__discription_violet">авторизуйтесь,</span>  либо воспользуйтесь лицензией. </p>
+						<p class="gallery__description">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <button type="button" class="gallery__description_button">авторизуйтесь,</button>  либо воспользуйтесь лицензией. </p>
 					</div>
 						<!-- Slider main container -->
 						<div class="swiper-container gallery-swiper">
@@ -254,33 +254,33 @@
 			</div>
 		</section>
 		<section class="catalog container">
-			<h2 class="catalog__heading">
+			<h2 class="h2 catalog__heading">
 				Каталог
 			</h2>
 			<ul class="catalog__tabs" id="catalog__tabs">
 				<li class="catalog__tabs_item"><button class="catalog__tabs_button" data-path="one"></button></li>
 				<li class="catalog__tabs_item"><button class="catalog__tabs_button" data-path="two"></button></li>
 				<li class="catalog__tabs_item"><button class="catalog__tabs_button" data-path="three"></button></li>
-				<li class="catalog__tabs_item catalog__discription_desktop"><button class="catalog__tabs_button catalog__tabs_button-active" data-path="four"></button></li>
-				<li class="catalog__tabs_item catalog__discription_mobile"><button class="catalog__tabs_button" data-path="four-mobile"></button></li>
+				<li class="catalog__tabs_item catalog__description_desktop"><button class="catalog__tabs_button catalog__tabs_button-active" data-path="four"></button></li>
+				<li class="catalog__tabs_item catalog__description_mobile"><button class="catalog__tabs_button" data-path="four-mobile"></button></li>
 				<li class="catalog__tabs_item"><button class="catalog__tabs_button" data-path="five"></button></li>
 			</ul>
-			<p class="catalog__discription" data-target="one">
+			<p class="catalog__description" data-target="one">
 				Les actionnaires des plus grandes entreprises, qui représentent un exemple frappant de la culture politique de type continental-européen, seront déclarés contraires aux normes universelles d'éthique et de moralité. Ne faisant qu'une partie de l'image globale, cherchant à supplanter la fabrication traditionnelle, la nanotechnologie reste à ce jour le lot des libéraux qui aspirent à être fonctionnellement séparés en éléments indépendants.
 			</p>
-			<p class="catalog__discription" data-target="two">
+			<p class="catalog__description" data-target="two">
 				Die Aktionäre der größten Unternehmen, die ein Paradebeispiel der kontinentaleuropäischen Art der politischen Kultur darstellen, werden erklärt, die universellen Normen der Ethik und Moral zu verletzen. Als Teil des Gesamtbildes, das die traditionelle Produktion verdrängen will, bleibt die Nanotechnologie bis heute ein Teil der Liberalen, die sich danach sehnen, funktional in unabhängige Elemente aufgeteilt zu werden.
 			</p>
-			<p class="catalog__discription" data-target="three">
+			<p class="catalog__description" data-target="three">
 				Gli azionisti delle maggiori società, che rappresentano un chiaro esempio del tipo di cultura politica continentale-europea, saranno dichiarati in violazione delle norme universali di etica e moralità. Essendo solo una parte del quadro generale che cerca di soppiantare la produzione tradizionale, le nanotecnologie rimangono fino ad oggi un destino di liberali che bramano di essere distanziati funzionalmente in elementi indipendenti.
 			</p>
-			<p class="catalog__discription catalog__discription-active catalog__discription_desktop" data-target="four">
+			<p class="catalog__description catalog__description-active catalog__description_desktop" data-target="four">
 				Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. 
 			</p>
-			<p class="catalog__discription" data-target="four-mobile">
+			<p class="catalog__description" data-target="four-mobile">
 				Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. 
 			</p>
-			<p class="catalog__discription" data-target="five">
+			<p class="catalog__description" data-target="five">
 				De aandeelhouders van de grootste bedrijven, die een levendig voorbeeld zijn van de continentale Europese politieke cultuur, zullen worden verklaard in strijd met de universele normen van ethiek en moraal. Nanotechnologie is slechts een deel van het totaalbeeld en probeert de traditionele productie te vervangen.tot op de dag van vandaag is nanotechnologie het lot van liberalen, die graag functioneel willen worden gescheiden in onafhankelijke elementen.
 			</p>
 			<div class="catalog-person">
@@ -341,14 +341,14 @@
 			</div>
 		</section>
 		<section class="events container">
-			<h2 class="events__heading">События</h2>
+			<h2 class="h2 events__heading">События</h2>
 			<ul class="events-list">
 				<li class="events__item">
 					<img src="#" data-src="img/events1.webp" alt="Событие: Книжная гравюра в живом восприятии" class="events__item_img lazyload">
 					<span class="events__span">Музей им. Щусева</span>
 					<span class="events__span">с 20 марта по 30 апреля</span>
 					<h3 class="events__title">Книжная гравюра в живом восприятии</h3>
-					<p class="events__discription">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+					<p class="events__description">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
 					<a href="#" class="events__link">Подробнее</a>
 				</li>
 				<li class="events__item">
@@ -356,7 +356,7 @@
 					<span class="events__span">ММОМА</span>
 					<span class="events__span">24 марта 19:00</span>
 					<h3 class="events__title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
-					<p class="events__discription">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
+					<p class="events__description">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
 					<a href="#" class="events__link">Подробнее</a>
 				</li>
 				<li class="events__item hidden-768">
@@ -364,7 +364,7 @@
 					<span class="events__span">Еврейский музей</span>
 					<span class="events__span">с 31 марта по 21 апреля</span>
 					<h3 class="events__title">Выставка «Формация 2020»</h3>
-					<p class="events__discription">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
+					<p class="events__description">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
 					<a href="#" class="events__link">Подробнее</a>
 				</li>
 				<li class="events__item hidden-desktop hidden-768">
@@ -372,7 +372,7 @@
 					<span class="events__span">Третьяковка на Крымском валу</span>
 					<span class="events__span">30 марта по 30 апреля</span>
 					<h3 class="events__title">XXIV Международная биеннале молодого искусства</h3>
-					<p class="events__discription">Внезапно, реплицированные с зарубежных источников, современные исследования.</p>
+					<p class="events__description">Внезапно, реплицированные с зарубежных источников, современные исследования.</p>
 					<a href="#" class="events__link">Подробнее</a>
 				</li>
 				<li class="events__item hidden-desktop hidden-768">
@@ -380,7 +380,7 @@
 					<span class="events__span">ММАМ</span>
 					<span class="events__span">с 8 апреля по 20 мая</span>
 					<h3 class="events__title">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-					<p class="events__discription">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+					<p class="events__description">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
 					<a href="#" class="events__link">Подробнее</a>
 				</li>
 			</ul>
@@ -395,7 +395,7 @@
 						<span class="events__span">Музей им. Щусева</span>
 						<span class="events__span">с 20 марта по 30 апреля</span>
 						<h3 class="events__title">Книжная гравюра в живом восприятии</h3>
-						<p class="events__discription">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+						<p class="events__description">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
 						<a href="#" class="events__link">Подробнее</a>
 					</div>
 					<div class="swiper-slide events__item">
@@ -403,7 +403,7 @@
 						<span class="events__span">ММОМА</span>
 						<span class="events__span">24 марта 19:00</span>
 						<h3 class="events__title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
-						<p class="events__discription">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
+						<p class="events__description">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
 						<a href="#" class="events__link">Подробнее</a>
 					</div>
 					<div class="swiper-slide events__item">
@@ -411,7 +411,7 @@
 						<span class="events__span">Еврейский музей</span>
 						<span class="events__span">с 31 марта по 21 апреля</span>
 						<h3 class="events__title">Выставка «Формация 2020»</h3>
-						<p class="events__discription">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
+						<p class="events__description">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
 						<a href="#" class="events__link">Подробнее</a>
 					</div>
 					<div class="swiper-slide events__item">
@@ -419,7 +419,7 @@
 						<span class="events__span">Третьяковка на Крымском валу</span>
 						<span class="events__span">30 марта по 30 апреля</span>
 						<h3 class="events__title">XXIV Международная биеннале молодого искусства</h3>
-						<p class="events__discription">Внезапно, реплицированные с зарубежных источников, современные исследования.</p>
+						<p class="events__description">Внезапно, реплицированные с зарубежных источников, современные исследования.</p>
 						<a href="#" class="events__link">Подробнее</a>
 					</div>
 					<div class="swiper-slide events__item">
@@ -427,7 +427,7 @@
 						<span class="events__span">ММАМ</span>
 						<span class="events__span">с 8 апреля по 20 мая</span>
 						<h3 class="events__title">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-						<p class="events__discription">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+						<p class="events__description">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
 						<a href="#" class="events__link">Подробнее</a>
 					</div>
 				</div>
@@ -437,8 +437,8 @@
 		</section>
 		<section class="edition">
 			<div class="container">
-				<h2 class="edition__heading">Издания</h2>
-				<div class="flex">
+				<h2 class="h2 edition__heading">Издания</h2>
+				<div class="container-line">
 					<div class="flex-column edition-column">
 						<span class="edition__span edition__span_hidden">Категории</span>
 						<ul class="edition-list">
@@ -720,23 +720,23 @@
 			</div>
 		</section>
 		<section class="projects container">
-			<h2 class="projects__heading">Проекты</h2>
-			<p class="projects__discription">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское<button class="projects__discription_tooltip">
-				<span class="projects__discription_tooltip-marker"></span>
-				<span class="projects__discription_tooltip-popup popup1">
+			<h2 class="h2 projects__heading">Проекты</h2>
+			<p class="projects__description">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское<button class="projects__description_tooltip">
+				<span class="projects__description_tooltip-marker"></span>
+				<span class="projects__description_tooltip-popup popup1">
 					Пример современных тенденций - современная методология разработки 
 				</span>
-			</button>обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены<button class="projects__discription_tooltip">
-				<span class="projects__discription_tooltip-marker"></span>
-				<span class="projects__discription_tooltip-popup popup2">
+			</button>обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены<button class="projects__description_tooltip">
+				<span class="projects__description_tooltip-marker"></span>
+				<span class="projects__description_tooltip-popup popup2">
 			  		Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции  
 				</span>
-			</button>исключительно в разрезе маркетинговых и финансовых<button class="projects__discription_tooltip">
-				<span class="projects__discription_tooltip-marker"></span>
-				<span class="projects__discription_tooltip-popup popup3">
+			</button>исключительно в разрезе маркетинговых и финансовых<button class="projects__description_tooltip">
+				<span class="projects__description_tooltip-marker"></span>
+				<span class="projects__description_tooltip-popup popup3">
 					В стремлении повысить качество 
 				</span>
-			</button>предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a href="#" class="projects__discription_link">blanchard-art.ru/projects/about</a></p>
+			</button>предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a href="#" class="projects__description_link">blanchard-art.ru/projects/about</a></p>
 			<h3 class="projects__heading-slider">Партнёры проектов:</h3>
 			<!-- Slider main container -->
 			<div class="swiper-container projects-swiper">
@@ -777,7 +777,7 @@
 							<div class="swiper-button-next projects-button-next"></div>
 		</section>
 		<section class="contacts">
-			<h2 class="contacts__heading">Контакты</h2>
+			<h2 class="h2 contacts__heading">Контакты</h2>
 			<div class="contacts-flex">
 				<div class="contacts__column">
 					<span class="contacts__column_span">Шоурум №4</span>
