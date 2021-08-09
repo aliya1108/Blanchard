@@ -120,7 +120,7 @@ const element = document.querySelector ('#selectCustom');
 });
 
 //Табы каталог
-document.querySelectorAll('.catalog__tabs_button').forEach(function(flag) {
+document.querySelectorAll('.catalog__button').forEach(function(flag) {
 	flag.addEventListener('click', function(event) {
 		const path = event.currentTarget.dataset.path
 		document.querySelectorAll('.catalog__description').forEach(function(tabdescription) {
@@ -130,9 +130,9 @@ document.querySelectorAll('.catalog__tabs_button').forEach(function(flag) {
 	})
 })
 
-$("#catalog__tabs").on("click", ".catalog__tabs_button", function() {
-	$("#catalog__tabs .catalog__tabs_button").removeClass("catalog__tabs_button-active"); //удаляем класс во всех вкладках
-	$(this).addClass("catalog__tabs_button-active"); //добавляем класс текущей (нажатой)
+$("#catalog__tabs").on("click", ".catalog__button", function() {
+	$("#catalog__tabs .catalog__button").removeClass("catalog__button-active"); //удаляем класс во всех вкладках
+	$(this).addClass("catalog__button-active"); //добавляем класс текущей (нажатой)
 });		
 
 //Аккардеон каталог
@@ -181,9 +181,9 @@ ymaps.ready(init);
 }
 
 //Выпадающие скроллы в шапке
-document.querySelector('#item1').addEventListener('click', function() {
+/*document.querySelector('#item1').addEventListener('click', function() {
 	document.querySelector('#scroll1').classList.toggle('scroll-active')
-})    
+})     
 
 document.querySelector('#item2').addEventListener('click', function() {
 	document.querySelector('#scroll2').classList.toggle('scroll-active')
@@ -199,7 +199,22 @@ document.querySelector('#item4').addEventListener('click', function() {
 
 document.querySelector('#item5').addEventListener('click', function() {
 	document.querySelector('#scroll5').classList.toggle('scroll-active')
+})   */
+
+document.querySelector('.header-bottom__item').addEventListener('click', function() {
+	document.querySelector('.close').classList.toggle('none'),
+	document.querySelector('.hidden').classList.toggle('open')
 })   
+
+document.querySelectorAll('.header-bottom__item').forEach(function(fl) {
+	fl.addEventListener('click', function(ev) {
+		const path = ev.currentTarget.dataset.path
+		document.querySelectorAll('.header-bottom__scroll').forEach(function(items) {
+			items.classList.remove('scroll-active')
+		})
+		document.querySelector(`[data-target="${path}"]`).classList.add('scroll-active')
+	})
+})
 
 //Бургер раскрытие
 document.querySelector('.header-top__burger').addEventListener('click', function() {
