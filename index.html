@@ -25,7 +25,7 @@
 				</button>
 				<img src="img/logo.svg" alt="Логотип Blanchard" class="logo">
 				<nav>
-					<ul class="header-top__list menu-active">
+					<ul class="header-top__list list menu-active">
 						<li>
 							<a href="" class="header-top__item">О нас</a>
 						</li>
@@ -49,7 +49,12 @@
 						</li>
 					</ul>
 				</nav>
-				<a href="" class="header-top__link link-active">Войти</a>
+				<a href="" class="header-top__link link-active">
+					<svg width="13" height="13" viewBox="0 0 13 13" fill="none">
+						<path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
+					</svg>						
+					Войти
+				</a>
 				<form class="header-top__form">
 					<button type="button" aria-label="Найти" class="header-top__form_button"></button>
 					<input type="text" class="header-top__form_input">
@@ -59,10 +64,17 @@
 		</div>
 		<div class="header-bottom">
 			<div class="container header-container">
-				<ul class="header-bottom__list">
+				<ul class="header-bottom__list list">
 					<li>
-						<button id="item1" class="header-bottom__item">Реализм</button>
-						<ul data-simplebar id="scroll1" class="header-bottom__scroll scroll-active">
+						<button id="item1" class="header-bottom__item" data-path="real">Реализм					
+							<svg class="close" width="12" height="7" viewBox="0 0 12 7" fill="none">
+								<path d="M11 1L6 6L1 1" stroke="white"/>
+							</svg>
+							<svg class="hidden" width="12" height="7" viewBox="0 0 12 7" fill="none">
+								<path d="M0.999997 6L6 0.999995L11 6" stroke="white"/>
+							</svg>
+						</button>
+						<ul data-simplebar id="scroll1" class="header-bottom__scroll scroll-active list" data-target="real">
 							<li class="header-bottom__scroll_item scroll1-1">Тинторетто</li>
 							<li class="header-bottom__scroll_item scroll1-2">Фридрих</li>
 							<li class="header-bottom__scroll_item scroll1-3">Леонардо</li>
@@ -74,8 +86,15 @@
 						</ul>
 					</li>
 					<li>
-						<button id="item2" class="header-bottom__item">Импрессионизм</button>
-						<ul data-simplebar id="scroll2" class="header-bottom__scroll scroll-active">
+						<button id="item2" class="header-bottom__item" data-path="imp">Импрессионизм
+							<svg class="close" width="12" height="7" viewBox="0 0 12 7" fill="none">
+								<path d="M11 1L6 6L1 1" stroke="white"/>
+							</svg>
+							<svg class="hidden" width="12" height="7" viewBox="0 0 12 7" fill="none">
+								<path d="M0.999997 6L6 0.999995L11 6" stroke="white"/>
+							</svg>
+						</button>
+						<ul data-simplebar id="scroll2" class="header-bottom__scroll scroll-active list" data-target="imp">
 							<li class="header-bottom__scroll_item scroll2-1">Моне</li>
 							<li class="header-bottom__scroll_item scroll2-2">Сислей</li>
 							<li class="header-bottom__scroll_item scroll2-3">Мане</li>
@@ -87,8 +106,15 @@
 						</ul>
 					</li>
 					<li>
-						<button id="item3" class="header-bottom__item">Постимпрессионизм</button>
-						<ul data-simplebar id="scroll3" class="header-bottom__scroll scroll-active">
+						<button id="item3" class="header-bottom__item" data-path="post">Постимпрессионизм
+							<svg class="close" width="12" height="7" viewBox="0 0 12 7" fill="none">
+								<path d="M11 1L6 6L1 1" stroke="white"/>
+							</svg>
+							<svg class="hidden" width="12" height="7" viewBox="0 0 12 7" fill="none">
+								<path d="M0.999997 6L6 0.999995L11 6" stroke="white"/>
+							</svg>
+						</button>
+						<ul data-simplebar id="scroll3" class="header-bottom__scroll scroll-active list" data-target="post">
 							<li class="header-bottom__scroll_item scroll3-1">Ван Гог</li>
 							<li class="header-bottom__scroll_item scroll3-2">Сезанн</li>
 							<li class="header-bottom__scroll_item scroll3-3">Гоген</li>
@@ -100,8 +126,15 @@
 						</ul>
 					</li>
 					<li>
-						<button id="item4" class="header-bottom__item">Авангард</button>
-						<ul data-simplebar id="scroll4" class="header-bottom__scroll scroll-active">
+						<button id="item4" class="header-bottom__item" data-path="avan">Авангард
+							<svg class="close" width="12" height="7" viewBox="0 0 12 7" fill="none">
+								<path d="M11 1L6 6L1 1" stroke="white"/>
+							</svg>
+							<svg class="hidden" width="12" height="7" viewBox="0 0 12 7" fill="none">
+								<path d="M0.999997 6L6 0.999995L11 6" stroke="white"/>
+							</svg>
+						</button>
+						<ul data-simplebar id="scroll4" class="header-bottom__scroll scroll-active list" data-target="avan">
 							<li class="header-bottom__scroll_item scroll4-1">Кандинский</li>
 							<li class="header-bottom__scroll_item scroll4-2">Маринетти</li>
 							<li class="header-bottom__scroll_item scroll4-3">Малевич</li>
@@ -113,8 +146,15 @@
 						</ul>
 					</li>
 					<li>
-						<button id="item5" class="header-bottom__item">Футуризм</button>
-						<ul data-simplebar id="scroll5" class="header-bottom__scroll scroll-active">
+						<button id="item5" class="header-bottom__item" data-path="fut">Футуризм
+							<svg class="close" width="12" height="7" viewBox="0 0 12 7" fill="none">
+								<path d="M11 1L6 6L1 1" stroke="white"/>
+							</svg>
+							<svg class="hidden" width="12" height="7" viewBox="0 0 12 7" fill="none">
+								<path d="M0.999997 6L6 0.999995L11 6" stroke="white"/>
+							</svg>
+						</button>
+						<ul data-simplebar id="scroll5" class="header-bottom__scroll scroll-active list" data-target="fut">
 							<li class="header-bottom__scroll_item scroll5-1">Тинторетто</li>
 							<li class="header-bottom__scroll_item scroll5-2">Фридрих</li>
 							<li class="header-bottom__scroll_item scroll5-3">Леонардо</li>
@@ -127,7 +167,12 @@
 					</li>
 				</ul>
 				<form class="header-bottom__form">
-					<button type="submit" class="header-bottom__form_button" aria-label="Найти"></button>
+					<button type="submit" class="header-bottom__form_button" aria-label="Найти">
+						<svg width="23" height="22" viewBox="0 0 23 22" fill="none">
+							<rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+						</svg>							
+					</button>
 					<input type="text" placeholder="Поиск по сайту" class="header-bottom__form_input" aria-label="Найти">
 				</form>
 			</div>
@@ -175,11 +220,21 @@
 						<!-- Slider main container -->
 						<div class="swiper-container gallery-swiper">
 							<!-- If we need navigation buttons -->
-							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-prev">
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+									<path d="M15 29C22.732 29 29 22.732 29 15C29 7.26801 22.732 0.999999 15 0.999999C7.26801 1 1 7.26801 1 15C1 22.732 7.26801 29 15 29Z" fill="#666" stroke="#666" stroke-width="2"/>
+									<path d="M16 20L11 15L16 10" stroke="white"/>
+								</svg>					
+							</div>
 							<!-- If we need pagination -->
 							<div class="swiper-pagination gallery-pagination"></div>
 							<!-- If we need navigation buttons -->
-							<div class="swiper-button-next"></div>
+							<div class="swiper-button-next">
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+									<path d="M15 29C22.732 29 29 22.732 29 15C29 7.26801 22.732 0.999999 15 0.999999C7.26801 1 1 7.26801 1 15C1 22.732 7.26801 29 15 29Z" fill="#666" stroke="#666" stroke-width="2"/>
+									<path d="M14 20L19 15L14 10" stroke="white"/>
+								</svg>				
+							</div>
 							<!-- Additional required wrapper -->
 							<div class="swiper-wrapper">
 								<!-- Slides -->
@@ -248,13 +303,13 @@
 				<h2 class="h2 catalog__heading">
 					Каталог
 				</h2>
-				<ul class="catalog__tabs" id="catalog__tabs">
-					<li class="catalog__tabs_item"><button class="catalog__tabs_button" data-path="one"></button></li>
-					<li class="catalog__tabs_item"><button class="catalog__tabs_button" data-path="two"></button></li>
-					<li class="catalog__tabs_item"><button class="catalog__tabs_button" data-path="three"></button></li>
-					<li class="catalog__tabs_item catalog__description_desktop"><button class="catalog__tabs_button catalog__tabs_button-active" data-path="four"></button></li>
-					<li class="catalog__tabs_item catalog__description_mobile"><button class="catalog__tabs_button" data-path="four-mobile"></button></li>
-					<li class="catalog__tabs_item"><button class="catalog__tabs_button" data-path="five"></button></li>
+				<ul class="catalog__tabs list" id="catalog__tabs">
+					<li class="catalog__tabs_item"><button class="catalog__button" data-path="one"></button></li>
+					<li class="catalog__tabs_item"><button class="catalog__button" data-path="two"></button></li>
+					<li class="catalog__tabs_item"><button class="catalog__button" data-path="three"></button></li>
+					<li class="catalog__tabs_item catalog__description_desktop"><button class="catalog__button catalog__button-active" data-path="four"></button></li>
+					<li class="catalog__tabs_item catalog__description_mobile"><button class="catalog__button" data-path="four-mobile"></button></li>
+					<li class="catalog__tabs_item"><button class="catalog__button" data-path="five"></button></li>
 				</ul>
 				<p class="catalog__description" data-target="one">
 					Les actionnaires des plus grandes entreprises, qui représentent un exemple frappant de la culture politique de type continental-européen, seront déclarés contraires aux normes universelles d'éthique et de moralité. Ne faisant qu'une partie de l'image globale, cherchant à supplanter la fabrication traditionnelle, la nanotechnologie reste à ce jour le lot des libéraux qui aspirent à être fonctionnellement séparés en éléments indépendants.
@@ -335,7 +390,7 @@
 		<section class="events">
 			<div class="container">
 				<h2 class="h2 events__heading">События</h2>
-				<ul class="events-list">
+				<ul class="events-list list">
 					<li class="events__item">
 						<img src="#" data-src="img/events1.webp" alt="Событие: Книжная гравюра в живом восприятии" class="events__item_img lazyload">
 						<span class="events__span">Музей им. Щусева</span>
@@ -435,7 +490,7 @@
 				<div class="container-line">
 					<div class="flex-column edition-column">
 						<span class="edition__span edition__span_hidden">Категории</span>
-						<ul class="edition-list">
+						<ul class="edition-list list">
 							<li class="edition-item">
 								<label class="edition__checkbox">
 									<input type="checkbox" name="check" class="edition__checkbox_input">
@@ -624,11 +679,21 @@
 						<!-- Slider main container -->
 						<div class="swiper-container edition-swiper">
 							<!-- If we need navigation buttons -->
-							<div class="swiper-button-prev editions-button-prev"></div>
+							<div class="swiper-button-prev editions-button-prev">
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+									<path d="M15 29C22.732 29 29 22.732 29 15C29 7.26801 22.732 0.999999 15 0.999999C7.26801 1 1 7.26801 1 15C1 22.732 7.26801 29 15 29Z" fill="#666666" stroke="#666" stroke-width="2"/>
+									<path d="M16 20L11 15L16 10" stroke="white"/>
+								</svg>	
+							</div>
 							<!-- If we need pagination -->
 							<div class="swiper-pagination editions-pagination"></div>
 							<!-- If we need navigation buttons -->
-							<div class="swiper-button-next editions-button-next"></div>
+							<div class="swiper-button-next editions-button-next">
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+									<path d="M15 29C22.732 29 29 22.732 29 15C29 7.26801 22.732 0.999999 15 0.999999C7.26801 1 1 7.26801 1 15C1 22.732 7.26801 29 15 29Z" fill="#666666" stroke="#666" stroke-width="2"/>
+									<path d="M14 20L19 15L14 10" stroke="white"/>
+								</svg>					
+							</div>
 							<!-- Additional required wrapper -->
 							<div class="swiper-wrapper">
 								<!-- Slides -->
@@ -769,8 +834,18 @@
 					</div>
 				</div>
 				<!-- If we need navigation buttons -->
-				<div class="swiper-button-prev projects-button-prev"></div>
-				<div class="swiper-button-next projects-button-next"></div>
+				<div class="swiper-button-prev projects-button-prev">
+					<svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+						<path d="M15 1C22.732 1 29 7.26801 29 15C29 22.732 22.732 29 15 29C7.26801 29 1 22.732 1 15C1 7.26801 7.26802 0.999999 15 1Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+						<path d="M16 20L11 15L16 10" stroke="black"/>
+					</svg>
+				</div>
+				<div class="swiper-button-next projects-button-next">
+					<svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+						<path d="M15 1C22.732 1 29 7.26801 29 15C29 22.732 22.732 29 15 29C7.26801 29 1 22.732 1 15C1 7.26801 7.26802 0.999999 15 1Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+						<path d="M14 10L19 15L14 20" stroke="black"/>
+					</svg>
+				</div>
 			</div>
 		</section>
 		<section class="contacts">
@@ -796,7 +871,7 @@
 	<footer class="footer">
 		<div class="container footer-container">
 			<img src="img/logo.svg" alt="Логотип Blanchard" class="logo footer__logo">
-			<ul class="footer__network">
+			<ul class="footer__network list">
 				<li class="footer__network_item"><a href="#" class="footer__network_item-link footer-vk" aria-label="Ссылка на страницу ВКонтакте"></a></li>
 				<li class="footer__network_item"><a href="#" class="footer__network_item-link footer-instagram" aria-label="Ссылка на страницу Инстаграм"></a></li>
 				<li class="footer__network_item"><a href="#" class="footer__network_item-link footer-fb" aria-label="Ссылка на страницу Фейсбук"></a></li>
