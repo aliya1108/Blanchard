@@ -243,8 +243,16 @@ img {
   transform: translate(-2px, -1px);
 }
 
-.header-bottom__list li:not(:last-child) {
+.header-bottom__list li:nth-child(1) {
+  margin-right: 95px;
+}
+
+.header-bottom__list li:nth-child(2), .header-bottom__list li:nth-child(3) {
   margin-right: 97px;
+}
+
+.header-bottom__list li:nth-child(4) {
+  margin-right: 98px;
 }
 
 .header-bottom__item:focus {
