@@ -201,10 +201,12 @@ document.querySelector('#item5').addEventListener('click', function() {
 	document.querySelector('#scroll5').classList.toggle('scroll-active')
 })   */
 
-document.querySelector('.header-bottom__item').addEventListener('click', function() {
-	document.querySelector('.close').classList.toggle('none'),
-	document.querySelector('.hidden').classList.toggle('open')
-})   
+document.querySelectorAll('.header-bottom__item').forEach(function(svg) {
+	svg.addEventListener('click', function() {
+			document.querySelector('.close').classList.toggle('none'),
+			document.querySelector('.hidden').classList.toggle('open')
+	})   
+})
 
 document.querySelectorAll('.header-bottom__item').forEach(function(fl) {
 	fl.addEventListener('click', function(ev) {
