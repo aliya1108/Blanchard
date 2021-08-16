@@ -213,6 +213,10 @@ img {
   background-color: var(--color_violet-dark);
 }
 
+.header-top__item:focus {
+  position: absolute;
+}
+
 .header-top__form {
   display: none;
 }
@@ -539,7 +543,7 @@ details > summary:first-of-type {
 .hero__header {
   margin-top: 0;
   margin-left: -4px;
-  margin-bottom: 21px;
+  margin-bottom: 19px;
   padding-top: 241px;
   width: 597px;
   font-weight: 700;
