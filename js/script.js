@@ -199,7 +199,7 @@ document.querySelector('#item4').addEventListener('click', function() {
 
 document.querySelector('#item5').addEventListener('click', function() {
 	document.querySelector('#scroll5').classList.toggle('scroll-active')
-})   */
+})   
 
 document.querySelectorAll('.header-bottom__item').forEach(function(svg) {
 	svg.addEventListener('click', function() {
@@ -217,6 +217,27 @@ document.querySelectorAll('.header-bottom__item').forEach(function(fl) {
 		document.querySelector(`[data-target="${path}"]`).classList.add('scroll-active')
 	})
 })
+*/
+
+const button = document.querySelectorAll('.header-bottom__item');
+const drop = document.querySelectorAll('.header-bottom__scroll')
+
+button.forEach(el => {
+  el.addEventListener('click', (e) => {
+    button.forEach(el => {el.classList.remove(('button-open'))});
+    e.currentTarget.classList.add('button-open');
+    drop.forEach(el => {el.classList.remove(('scroll-active'))})
+    e.currentTarget.closest('li').querySelector('.header-bottom__scroll').classList.toggle('scroll-active');
+  });
+});
+
+document.addEventListener('click', (e) => {
+  console.log(e.target)
+  if (!e.target.classList.contains('header-bottom__scroll') && !e.target.classList.contains('drop-btn')) {
+    button.forEach(el => {el.classList.remove(('button-open'))});
+    drop.forEach(el => {el.classList.remove(('scroll-active'))})
+  }
+});
 
 //Бургер раскрытие
 document.querySelector('.header-top__burger').addEventListener('click', function() {
