@@ -181,63 +181,84 @@ ymaps.ready(init);
 }
 
 //Выпадающие скроллы в шапке
-/*document.querySelector('#item1').addEventListener('click', function() {
-	document.querySelector('#scroll1').classList.toggle('scroll-active')
+document.querySelector('#item1').addEventListener('click', function() {
+	document.querySelector('#scroll1').classList.toggle('scroll-active'),
+	document.querySelector('.svg-close1').classList.toggle('svg-open')
 })     
 
 document.querySelector('#item2').addEventListener('click', function() {
-	document.querySelector('#scroll2').classList.toggle('scroll-active')
+	document.querySelector('#scroll2').classList.toggle('scroll-active'),
+	document.querySelector('.svg-close2').classList.toggle('svg-open')
 })   
 
 document.querySelector('#item3').addEventListener('click', function() {
-	document.querySelector('#scroll3').classList.toggle('scroll-active')
+	document.querySelector('#scroll3').classList.toggle('scroll-active'),
+	document.querySelector('.svg-close3').classList.toggle('svg-open')
 })   
 
 document.querySelector('#item4').addEventListener('click', function() {
-	document.querySelector('#scroll4').classList.toggle('scroll-active')
+	document.querySelector('#scroll4').classList.toggle('scroll-active'),
+	document.querySelector('.svg-close4').classList.toggle('svg-open')
 })   
 
 document.querySelector('#item5').addEventListener('click', function() {
-	document.querySelector('#scroll5').classList.toggle('scroll-active')
+	document.querySelector('#scroll5').classList.toggle('scroll-active'),
+	document.querySelector('.svg-close5').classList.toggle('svg-open')
 })   
 
-document.querySelectorAll('.header-bottom__item').forEach(function(svg) {
-	svg.addEventListener('click', function() {
-			document.querySelector('.close').classList.toggle('none'),
-			document.querySelector('.hidden').classList.toggle('open')
-	})   
-})
 
-document.querySelectorAll('.header-bottom__item').forEach(function(fl) {
-	fl.addEventListener('click', function(ev) {
-		const path = ev.currentTarget.dataset.path
-		document.querySelectorAll('.header-bottom__scroll').forEach(function(items) {
-			items.classList.remove('scroll-active')
-		})
-		document.querySelector(`[data-target="${path}"]`).classList.add('scroll-active')
-	})
-})
-*/
-
-const button = document.querySelectorAll('.header-bottom__item');
-const drop = document.querySelectorAll('.header-bottom__scroll')
-
-button.forEach(el => {
-  el.addEventListener('click', (e) => {
-    button.forEach(el => {el.classList.remove(('button-open'))});
-    e.currentTarget.classList.add('button-open');
-    drop.forEach(el => {el.classList.remove(('scroll-active'))})
-    e.currentTarget.closest('li').querySelector('.header-bottom__scroll').classList.toggle('scroll-active');
-  });
-});
-
-document.addEventListener('click', (e) => {
-  console.log(e.target)
-  if (!e.target.classList.contains('header-bottom__scroll') && !e.target.classList.contains('drop-btn')) {
-    button.forEach(el => {el.classList.remove(('button-open'))});
-    drop.forEach(el => {el.classList.remove(('scroll-active'))})
-  }
-});
+window.onclick = function(e) {
+	if (!e.target.matches('#item1')) {
+		var myDropdown = document.getElementById("scroll1");
+		if (myDropdown.classList.contains('scroll-active')) {
+			myDropdown.classList.remove('scroll-active');
+		}
+		var myDropdown = document.getElementById("svg-close1");
+		if (myDropdown.classList.contains('svg-open')) {
+			myDropdown.classList.remove('svg-open');
+		}
+	}
+	if (!e.target.matches('#item2')) {
+		var myDropdown = document.getElementById("scroll2");
+		if (myDropdown.classList.contains('scroll-active')) {
+			myDropdown.classList.remove('scroll-active');
+		}
+		var myDropdown = document.getElementById("svg-close2");
+	 	if (myDropdown.classList.contains('svg-open')) {
+			myDropdown.classList.remove('svg-open');
+		}
+	}
+	if (!e.target.matches('#item3')) {
+		var myDropdown = document.getElementById("scroll3");
+		if (myDropdown.classList.contains('scroll-active')) {
+			myDropdown.classList.remove('scroll-active');
+		}
+		var myDropdown = document.getElementById("svg-close3");
+		if (myDropdown.classList.contains('svg-open')) {
+			myDropdown.classList.remove('svg-open');
+		}
+	}
+	if (!e.target.matches('#item4')) {
+		var myDropdown = document.getElementById("scroll4");
+		if (myDropdown.classList.contains('scroll-active')) {
+			myDropdown.classList.remove('scroll-active');
+		}
+		var myDropdown = document.getElementById("svg-close4");
+		if (myDropdown.classList.contains('svg-open')) {
+			myDropdown.classList.remove('svg-open');
+		}
+	}
+	if (!e.target.matches('#item5')) {
+		var myDropdown = document.getElementById("scroll5");
+		if (myDropdown.classList.contains('scroll-active')) {
+			myDropdown.classList.remove('scroll-active');
+		}
+		var myDropdown = document.getElementById("svg-close5");
+	  	if (myDropdown.classList.contains('svg-open')) {
+			myDropdown.classList.remove('svg-open');
+		}
+	}
+}
 
 //Бургер раскрытие
 document.querySelector('.header-top__burger').addEventListener('click', function() {
