@@ -66,7 +66,7 @@ html {
   overflow-x: hidden;
 }
 
-h2, h3, .about-us__heading, .gallery__heading, .catalog__heading, .events__heading, .edition__heading, .projects__heading, .contacts__heading, .catalog-card__heading, .events__title, .projects__heading-slider, .contacts__column_title, .contacts__column_title-320 {
+.about-us__heading, .gallery__heading, .catalog__heading, .events__heading, .edition__heading, .projects__heading, .contacts__heading, .catalog-card__heading, .events__title, .projects__heading-slider, .contacts__column_title, .contacts__column_title-320 {
   font-weight: 400;
 }
 
@@ -115,7 +115,7 @@ img {
   transition: outline 0.1s ease-in-out;
 }
 
-.h2 {
+.heading-2-level {
   margin-top: 0;
   margin-left: -2px;
   font-size: var(--font-size_h2);
@@ -172,7 +172,7 @@ img {
   letter-spacing: 0.06px;
 }
 
-.header-top__item:focus::after, .header-top__link:focus::after, .header-bottom__item:focus::after {
+.header-top__item::after, .header-top__link::after, .header-bottom__item::after {
   content: "";
 	position: absolute;
   top: -3px;
@@ -180,7 +180,13 @@ img {
   width: calc(100% + 12px);
   height: calc(100% + 6px);
 	z-index: -1;
+  opacity: 0;
   background-color: var(--color_violet-dark);
+  transition: opacity 0.1s ease-in-out;
+}
+
+.header-top__item:focus::after, .header-top__link:focus::after, .header-bottom__item:focus::after {
+  opacity: 1;
 }
 
 .header-top__item:focus, .header-top__link:focus, .header-bottom__item:focus {
@@ -592,6 +598,7 @@ details > summary:first-of-type {
 
 .about-us__description {
   margin-top: 0;
+  margin-bottom: 0;
   width: 1080px;
   font-size: var(--font-size_minor);
   line-height: 2;
@@ -635,6 +642,11 @@ details > summary:first-of-type {
 	border-radius: 6px;
   border: 1px solid var(--color_white);
   background-color: var(--color_transparent);
+  transition: background-color 0.1s ease-in-out;
+}
+
+.choices:hover, .choices:focus {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .choices:focus {
@@ -848,7 +860,7 @@ details > summary:first-of-type {
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  transition: filter 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .catalog__tabs_item:not(:last-child) {
