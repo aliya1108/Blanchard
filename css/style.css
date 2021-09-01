@@ -1081,8 +1081,10 @@ details > summary:first-of-type {
 
 .ui-widget button {
   position: relative;
+  margin-right: 30px;
   margin-bottom: 1px;
   padding-left: 0;
+  width: 205px;
   text-align: left;
   font-family: 'Open Sans', sans-serif;
   font-size: var(--font-size_minor);
