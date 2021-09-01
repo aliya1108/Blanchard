@@ -565,7 +565,6 @@ details > summary:first-of-type {
   font-size: var(--font-size_head);
   color: var(--color_white);
   background: var(--color_violet);
-  transition: border 0.1s ease-in-out;
 }
 
 .hero__button:hover {
@@ -692,7 +691,6 @@ details > summary:first-of-type {
   top: 0;
   margin-top: 40px;
 	padding-top: 0; 
-	border: 6px;
   background-color: var(--color_transparent);
 }
 
@@ -710,7 +708,12 @@ details > summary:first-of-type {
   font-size: var(--font-size_minor);
 }
 
-.choices__list--dropdown .choices__item {
+.choices__list--dropdown::before {
+  content: "";
+	position: absolute;
+  top: 35px;
+  left: 0;
+  width: 100%;
   border-bottom: 1px solid var(--color_white);
 }
 
@@ -1077,12 +1080,28 @@ details > summary:first-of-type {
 }
 
 .ui-widget button {
+  position: relative;
+  margin-bottom: 1px;
   padding-left: 0;
-  padding-bottom: 2px;
-  width: 210px;
+  text-align: left;
   font-family: 'Open Sans', sans-serif;
   font-size: var(--font-size_minor);
   line-height: 29px;
+}
+
+.ui-widget button::before {
+  content: "";
+	position: absolute;
+  top: 25px;
+  left: -2px;
+  width: 100%;
+  border-bottom: 1px solid #9D5CD0;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.ui-widget button:hover::before {
+  opacity: 1;
 }
 
 .ui-widget button:focus {
@@ -1091,23 +1110,14 @@ details > summary:first-of-type {
   outline: none;
   background-color: var(--color_violet);
 }
-
+/*
 .ui-widget button:hover {
   border-bottom: 1px solid var(--color_violet);
   line-height: 1.8;
   color: var(--color_violet);  
   border-bottom-width: 1px;
 }
-
-.accordion-button {
-  margin-bottom: 1px;
-  padding-top: 0;
-  padding-bottom: 0;
-  box-sizing: content-box;
-  width: 280px;
-  text-align: left;
-}
-
+*/
 .accordion-button-active {
   color: var(--color_violet);
 }
