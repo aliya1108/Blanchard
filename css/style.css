@@ -1003,6 +1003,7 @@ details > summary:first-of-type {
 }
 
 .catalog-card__link {
+  font-weight: 600;
   border-bottom: 1px solid transparent;
   color: var(--color_violet);
   transition: border-bottom 0.1s ease-in-out;
@@ -1046,14 +1047,6 @@ details > summary:first-of-type {
   transition: border, color, background-image 0.1s ease-in-out;
 }
 
-.ui-accordion .ui-accordion-header-active {
-  border-top: 1px solid var(--color_violet-dark);
-  border-bottom: 1px solid var(--color_violet-dark);
-  color: var(--color_violet-dark);
-  outline: none;
-  background-image: url('../img/catalog-accordion-active.svg');
-}
-
 .ui-accordion .ui-accordion-header:focus {
   outline: 2px solid var(--color_violet-dark);
   outline-offset: 3px;
@@ -1076,6 +1069,14 @@ details > summary:first-of-type {
   background-position: right;
   background-repeat: no-repeat;
   background-size: 50px 50px;
+}
+
+.ui-accordion .ui-accordion-header-active, .ui-accordion .ui-accordion-header-active:hover {
+  border-top: 1px solid var(--color_violet-dark);
+  border-bottom: 1px solid var(--color_violet-dark);
+  color: var(--color_violet-dark);
+  outline: none;
+  background-image: url('../img/catalog-accordion-active.svg');
 }
 
 .ui-accordion-header-active {
@@ -1135,7 +1136,7 @@ details > summary:first-of-type {
 }
 
 .ui-widget button:focus {
-  padding: 1px 0;
+  padding: 1px;
   color: var(--color_white);
   outline: none;
   background-color: var(--color_violet);
