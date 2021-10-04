@@ -126,7 +126,17 @@ document.querySelectorAll('.catalog__button').forEach(function(flag) {
 		document.querySelectorAll('.catalog__description').forEach(function(tabdescription) {
 			tabdescription.classList.remove('catalog__description-active')
 		})
-		document.querySelector(`[data-target="${path}"]`).classList.add('catalog__description-active')
+		document.querySelector(`[data-target="${path}"]`).classList.add('catalog__description-active');
+	})
+})
+
+document.querySelectorAll('.catalog__button').forEach(function(fl) {
+	fl.addEventListener('click', function(ev) {
+		const path = ev.currentTarget.dataset.path
+		document.querySelectorAll('.accordion__content').forEach(function(tabdescription) {
+			tabdescription.classList.remove('accordion__content-active')
+		})
+		document.querySelector(`[data-target="${path}"]`).classList.add('accordion__content-active')
 	})
 })
 
