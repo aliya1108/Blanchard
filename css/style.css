@@ -1109,6 +1109,14 @@ details > summary:first-of-type {
   border-bottom: 1px solid var(--color_violet);
 }
 
+.accordion__content {
+  display: none;
+}
+
+.accordion__content-active {
+  display: block;
+}
+
 .ui-widget button {
   position: relative;
   margin-right: 30px;
