@@ -157,6 +157,11 @@ $("#accordion-buttons").on("click", ".accordion-button", function(){
 	$(this).addClass("accordion-button-active"); //добавляем класс текущей (нажатой)
 });
 
+$("#accordion-buttons-rus").on("click", ".accordion-button", function(){
+	$("#accordion-buttons-rus .accordion-button").removeClass("accordion-button-active"); //удаляем класс во всех вкладках
+	$(this).addClass("accordion-button-active"); //добавляем класс текущей (нажатой)
+});
+
 //Табы в аккардеоне
 document.querySelectorAll('.accordion-button').forEach(function(person) {
 	person.addEventListener('click', function(event) {
